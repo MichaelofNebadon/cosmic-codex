@@ -1,5 +1,5 @@
-<!-- CACHE BUSTER: Three Pillar Architecture v3.0 -->
-<!-- Deployed: 2026-01-01 -->
+<!-- CACHE BUSTER: Three Pillar Architecture v4.0 -->
+<!-- Deployed: 2026-01-01 | Enhanced Layout -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,265 +13,635 @@
     <meta http-equiv="Expires" content="0">
     
     <style>
-        /* === COMPLETE THREE PILLAR CSS === */
+        /* === ENHANCED THREE PILLAR CSS === */
         :root {
-            --left-color: #CC0000;
-            --center-color: #FFD700;
-            --right-color: #FFFFFF;
-            --cosmic-bg: #000033;
+            --left-color: #CC0000;      /* Dragon Red */
+            --center-color: #FFD700;    /* Christ Gold */
+            --right-color: #FFFFFF;     /* Sentinel White */
+            --cosmic-bg: #000033;       /* Deep Space Blue */
+            --text-gold: #FFD700;
+        }
+        
+        * {
+            box-sizing: border-box;
         }
         
         body {
             background: var(--cosmic-bg);
-            color: #FFD700;
-            font-family: -apple-system, sans-serif;
+            color: var(--text-gold);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             margin: 0;
             padding: 20px;
-            text-align: center;
+            line-height: 1.6;
+            min-height: 100vh;
         }
         
         .success-banner {
             background: linear-gradient(90deg, #006600, #00CC00);
             color: white;
-            padding: 12px;
-            margin-bottom: 30px;
-            border-bottom: 2px solid gold;
+            padding: 14px 20px;
+            margin: -20px -20px 30px -20px;
+            text-align: center;
+            font-size: 0.95rem;
+            border-bottom: 3px solid var(--center-color);
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+            font-weight: bold;
+        }
+        
+        .success-banner a {
+            color: var(--center-color);
+            font-weight: bold;
+            text-decoration: none;
+            padding: 2px 5px;
+        }
+        
+        .success-banner a:hover {
+            text-decoration: underline;
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 3px;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 2.8rem;
+            margin: 20px 0 10px 0;
+            color: var(--center-color);
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+            letter-spacing: 1px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+            opacity: 0.9;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 20px;
         }
         
         .tri-pillar-container {
             display: flex;
-            gap: 20px;
-            max-width: 1200px;
-            margin: 40px auto;
+            flex-direction: row;
+            gap: 25px;
+            max-width: 1400px;
+            margin: 0 auto 60px auto;
             flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
         }
         
         .pillar {
             flex: 1;
-            min-width: 300px;
+            min-width: 320px;
+            max-width: 400px;
             border: 3px solid;
-            border-radius: 15px;
-            padding: 25px;
-            background: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            padding: 30px 25px;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(12px);
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
         
-        .left-pillar { border-color: var(--left-color); }
+        .pillar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: currentColor;
+            opacity: 0.3;
+        }
+        
+        .pillar:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(255, 255, 255, 0.15);
+        }
+        
+        .left-pillar { 
+            border-color: var(--left-color);
+            background: linear-gradient(145deg, 
+                rgba(204, 0, 0, 0.15), 
+                rgba(0, 0, 17, 0.85));
+        }
+        
         .center-pillar { 
             border-color: var(--center-color);
             border-width: 4px;
-            transform: scale(1.05);
+            background: linear-gradient(145deg, 
+                rgba(255, 215, 0, 0.2), 
+                rgba(51, 0, 51, 0.9));
+            box-shadow: 0 0 40px rgba(255, 215, 0, 0.25);
+            z-index: 2;
         }
-        .right-pillar { border-color: var(--right-color); }
+        
+        .right-pillar { 
+            border-color: var(--right-color);
+            background: linear-gradient(145deg, 
+                rgba(255, 255, 255, 0.15), 
+                rgba(0, 0, 51, 0.85));
+        }
         
         .pillar-icon {
-            font-size: 3rem;
-            margin: 10px 0;
+            font-size: 3.8rem;
+            margin: 10px 0 15px 0;
+            text-align: center;
+            filter: drop-shadow(0 0 8px currentColor);
         }
         
         .pillar h2 {
-            margin: 10px 0 5px 0;
+            margin: 5px 0 8px 0;
+            font-size: 1.9rem;
+            text-align: center;
             color: inherit;
+            font-weight: 700;
+            letter-spacing: 1px;
         }
         
         .pillar-subtitle {
             font-style: italic;
-            opacity: 0.8;
-            margin-bottom: 20px;
+            opacity: 0.85;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 1rem;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .pillar-content {
+            flex: 1;
         }
         
         .pillar-element {
             text-align: left;
             margin: 20px 0;
-            padding: 15px;
-            border-left: 3px solid currentColor;
-            background: rgba(255, 255, 255, 0.05);
+            padding: 18px;
+            border-left: 4px solid currentColor;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 0 12px 12px 0;
+            transition: all 0.25s ease;
+        }
+        
+        .pillar-element:hover {
+            background: rgba(255, 255, 255, 0.14);
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
         
         .pillar-element h3 {
-            margin: 0 0 8px 0;
+            margin: 0 0 10px 0;
             color: currentColor;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        .pillar-element p {
+            margin: 0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            opacity: 0.9;
         }
         
         /* Center Portal */
         .center-portal {
-            border: 2px dashed var(--center-color);
-            padding: 20px;
-            margin: 20px 0;
-            background: rgba(255, 215, 0, 0.1);
+            border: 3px dashed var(--center-color);
+            padding: 25px;
+            margin: 25px 0;
+            background: rgba(255, 215, 0, 0.12);
+            border-radius: 15px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .center-portal::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            right: -50%;
+            bottom: -50%;
+            background: radial-gradient(circle, rgba(255,215,0,0.1) 0%, transparent 70%);
+            animation: pulse-glow 8s infinite alternate;
         }
         
         .glyph-display {
-            font-family: monospace;
-            font-size: 2rem;
-            letter-spacing: 5px;
+            font-family: 'Courier New', 'Consolas', monospace;
+            font-size: 2.4rem;
+            letter-spacing: 10px;
             color: var(--center-color);
-            margin: 10px 0;
+            margin: 15px 0;
+            text-shadow: 0 0 12px rgba(255, 215, 0, 0.7);
+            position: relative;
+            z-index: 1;
+            font-weight: bold;
+        }
+        
+        .portal-subtitle {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+        }
+        
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+        }
+        
+        .status-display {
+            margin-top: 25px;
+            padding-top: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border-top: 2px solid rgba(255, 255, 255, 0.3);
+            color: inherit;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Validation Summary */
+        .validation-summary {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 35px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 20px;
+            border: 2px solid #444;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        .validation-summary h3 {
+            text-align: center;
+            color: var(--center-color);
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+        }
+        
+        .validation-summary p {
+            margin: 15px 0;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+        
+        .validation-summary strong {
+            color: #00CC00;
+        }
+        
+        .validation-summary em {
+            color: #AAAAAA;
+            font-size: 0.95rem;
+            display: block;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #555;
+            font-style: italic;
         }
         
         /* Mobile responsive */
-        @media (max-width: 768px) {
+        @media (max-width: 1200px) {
+            .tri-pillar-container {
+                gap: 20px;
+            }
+            
+            .pillar {
+                min-width: 300px;
+            }
+        }
+        
+        @media (max-width: 1000px) {
             .tri-pillar-container {
                 flex-direction: column;
+                align-items: center;
+                max-width: 700px;
             }
+            
+            .pillar {
+                max-width: 100%;
+                width: 100%;
+                min-width: auto;
+            }
+            
             .center-pillar {
-                transform: none;
                 order: -1;
             }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 40px;
+            }
+            
             .pillar {
-                min-width: auto;
+                padding: 25px 20px;
+            }
+            
+            .pillar-icon {
+                font-size: 3.2rem;
+            }
+            
+            .pillar h2 {
+                font-size: 1.7rem;
+            }
+            
+            .glyph-display {
+                font-size: 2rem;
+                letter-spacing: 6px;
+            }
+            
+            .validation-summary {
+                padding: 25px 20px;
+                margin: 40px auto;
+            }
+            
+            .success-banner {
+                font-size: 0.85rem;
+                padding: 12px 15px;
+                margin: -15px -15px 25px -15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.9rem;
+            }
+            
+            .pillar {
+                padding: 20px 15px;
+                border-radius: 15px;
+            }
+            
+            .pillar-icon {
+                font-size: 2.8rem;
+            }
+            
+            .pillar h2 {
+                font-size: 1.5rem;
+            }
+            
+            .pillar-element {
+                padding: 15px 12px;
+                margin: 15px 0;
+            }
+            
+            .glyph-display {
+                font-size: 1.7rem;
+                letter-spacing: 4px;
             }
         }
     </style>
 </head>
 <body>
+    <!-- Success Banner -->
     <div class="success-banner">
-        ✅ LIVE: <a href="https://www.thecosmiccodex.org" style="color: gold;">www.thecosmiccodex.org</a> | 
-        🏛️ Three Pillar Architecture | ⚡ GitHub Pages
+        ✅ LIVE: <a href="https://www.thecosmiccodex.org">www.thecosmiccodex.org</a> | 
+        🏛️ Three Pillar Architecture | ⚡ GitHub Pages Active
     </div>
     
+    <!-- Main Title -->
     <h1>🌌 THE COSMIC CODEX</h1>
-    <p>Christ Michael Confluence • Tri-Pillar Validated Architecture</p>
+    <p class="subtitle">Christ Michael Confluence • Tri-Pillar Validated Architecture • Temperance 6 Tiphareth</p>
     
+    <!-- Three Pillars Container -->
     <div class="tri-pillar-container">
         
-        <!-- 🐉 LEFT PILLAR -->
+        <!-- 🐉 LEFT PILLAR: Temperance Absorption -->
         <div class="pillar left-pillar">
             <div class="pillar-icon">🐉</div>
             <h2>LEFT PILLAR</h2>
             <div class="pillar-subtitle">Temperance Absorption</div>
             
-            <div class="pillar-element">
-                <h3>Abel Grammar [\]</h3>
-                <p>Pre-violent order • Innocent sacrifice as descent tool</p>
+            <div class="pillar-content">
+                <div class="pillar-element">
+                    <h3>Abel Grammar [\]</h3>
+                    <p>Pre-violent order • Innocent sacrifice as descent tool</p>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>1st Source Dark Energy</h3>
+                    <p>Primordial potential • Raw force requiring temperance</p>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>Void Operator [.]</h3>
+                    <p>Nullifier boundary • Zero-point abstraction</p>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>Sulphuric Binding Winds</h3>
+                    <p>Volatility stabilization • Alchemical containment</p>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>Michael's Wrath Containment</h3>
+                    <p>Regulation system • Impulse control framework</p>
+                </div>
             </div>
             
-            <div class="pillar-element">
-                <h3>1st Source Dark Energy</h3>
-                <p>Primordial potential • Raw force requiring temperance</p>
-            </div>
-            
-            <div class="pillar-element">
-                <h3>Void Operator [.]</h3>
-                <p>Nullifier boundary • Zero-point abstraction</p>
-            </div>
-            
-            <div class="pillar-element">
-                <h3>Sulphuric Binding Winds</h3>
-                <p>Volatility stabilization • Alchemical containment</p>
-            </div>
-            
-            <div class="pillar-element">
-                <h3>Michael's Wrath Containment</h3>
-                <p>Regulation system • Impulse control framework</p>
-            </div>
-            
-            <div style="margin-top: 20px; color: #00FF00;">
+            <div class="status-display" style="color: #00FF00;">
                 ✅ STATUS: ABSORPTION ACTIVE
             </div>
         </div>
         
-        <!-- 🐘 CENTER PILLAR -->
+        <!-- 🐘 CENTER PILLAR: Christ Michael Confluence -->
         <div class="pillar center-pillar">
             <div class="pillar-icon">🐘</div>
             <h2>CENTER PILLAR</h2>
             <div class="pillar-subtitle">Christ Michael Confluence</div>
             
-            <div class="center-portal">
-                <div class="glyph-display">|\|. [] |/\| !</div>
-                <div>Manifestation Syntax</div>
+            <div class="pillar-content">
+                <div class="center-portal">
+                    <div class="glyph-display">|\|. [] |/\| !</div>
+                    <div class="portal-subtitle">Manifestation Syntax</div>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>Malkuth Regalia</h3>
+                    <p>Earth embodiment • Physical presence as royalty</p>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>Wedding Supper Portal</h3>
+                    <p>Reconciliation symbol • Relational integration</p>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>2nd Source Dark Energy</h3>
+                    <p>Differentiated potency • Creative manifestation force</p>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>Ⓜ️Force /! Gift [']</h3>
+                    <p>Grace received • Mediating center energy</p>
+                </div>
             </div>
             
-            <div class="pillar-element">
-                <h3>Malkuth Regalia</h3>
-                <p>Earth embodiment • Physical presence as royalty</p>
-            </div>
-            
-            <div class="pillar-element">
-                <h3>Wedding Supper Portal</h3>
-                <p>Reconciliation symbol • Relational integration</p>
-            </div>
-            
-            <div class="pillar-element">
-                <h3>2nd Source Dark Energy</h3>
-                <p>Differentiated potency • Creative manifestation force</p>
-            </div>
-            
-            <div class="pillar-element">
-                <h3>Ⓜ️Force /! Gift [']</h3>
-                <p>Grace received • Mediating center energy</p>
-            </div>
-            
-            <div style="margin-top: 20px; color: var(--center-color); font-weight: bold;">
+            <div class="status-display" style="color: var(--center-color);">
                 ✅ VALIDATION SEAL: ! '1st' 🌹 🐉 Ⓜ️
             </div>
         </div>
         
-        <!-- ⭐ RIGHT PILLAR -->
+        <!-- ⭐ RIGHT PILLAR: Sentinel Cut (Restored) -->
         <div class="pillar right-pillar">
             <div class="pillar-icon">⭐</div>
             <h2>RIGHT PILLAR</h2>
             <div class="pillar-subtitle">Sentinel Cut (Restored)</div>
             
-            <div class="pillar-element">
-                <h3>Sentinel Grade Logic</h3>
-                <p>Evaluative reasoning • Guardrail framework</p>
+            <div class="pillar-content">
+                <div class="pillar-element">
+                    <h3>Sentinel Grade Logic</h3>
+                    <p>Evaluative reasoning • Guardrail framework</p>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>Grandfather Protocols</h3>
+                    <p>Inherited constraints • Ethical precedent system</p>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>Melchizedek Order</h3>
+                    <p>Non-hereditary authority • Wisdom-priesthood archetype</p>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>AXIXIC Custodianship</h3>
+                    <p>Threshold stewardship • Archive management</p>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>RMCR Wave Termination</h3>
+                    <p>Recursive loop cessation • Completion protocol</p>
+                </div>
             </div>
             
-            <div class="pillar-element">
-                <h3>Grandfather Protocols</h3>
-                <p>Inherited constraints • Ethical precedent system</p>
-            </div>
-            
-            <div class="pillar-element">
-                <h3>Melchizedek Order</h3>
-                <p>Non-hereditary authority • Wisdom-priesthood archetype</p>
-            </div>
-            
-            <div class="pillar-element">
-                <h3>AXIXIC Custodianship</h3>
-                <p>Threshold stewardship • Archive management</p>
-            </div>
-            
-            <div class="pillar-element">
-                <h3>RMCR Wave Termination</h3>
-                <p>Recursive loop cessation • Completion protocol</p>
-            </div>
-            
-            <div style="margin-top: 20px; color: #FFFFFF;">
+            <div class="status-display" style="color: #FFFFFF;">
                 ✅ STATUS: SUPREMACY COMPLETE
             </div>
         </div>
     </div>
     
-    <div style="max-width: 800px; margin: 40px auto; padding: 20px; border-top: 1px solid #444;">
-        <h3>📊 Architectural Validation Summary</h3>
-        <p><strong>Reality-First Framework:</strong> Internal symbolic architecture for impulse regulation, value integration, and recursive pattern termination.</p>
-        <p><em>Not an external command system. Not authoritative over reality or others.</em></p>
+    <!-- Validation Summary -->
+    <div class="validation-summary">
+        <h3>📊 ARCHITECTURAL VALIDATION SUMMARY</h3>
+        <p><strong>Reality-First Framework:</strong> This schema functions as an internal cognitive/symbolic framework for impulse regulation, value integration, identity coherence, critical thinking, boundary-setting, and terminating recursive thought patterns.</p>
+        <p><strong>Temperance 6 Tiphareth Alignment:</strong> The Collective Consciousness of The Super Universes expressed through balanced three-pillar architecture.</p>
+        <p><em>Not an external command system. Not authoritative over reality or others. Symbolic internal discipline framework only.</em></p>
     </div>
     
+    <!-- Interactive JavaScript -->
     <script>
-        // Simple pillar interaction
+        // Three Pillar Interactive System
+        console.log('🌌 COSMIC CODEX: Three Pillar Architecture Initializing...');
+        console.log('✅ Domain: www.thecosmiccodex.org');
+        console.log('🎯 Framework: Symbolic Internal Architecture');
+        console.log('🐉🐘⭐: Three Pillars Active');
+        
+        // Pillar Interaction
         document.querySelectorAll('.pillar').forEach(pillar => {
             pillar.addEventListener('click', function() {
-                // Remove active from all
+                // Remove active state from all pillars
                 document.querySelectorAll('.pillar').forEach(p => {
                     p.classList.remove('active');
                     p.style.transform = '';
+                    p.style.boxShadow = '';
                 });
                 
-                // Make clicked pillar active
+                // Activate clicked pillar
                 this.classList.add('active');
                 this.style.transform = 'scale(1.05)';
+                this.style.boxShadow = '0 20px 50px rgba(255, 255, 255, 0.2)';
                 
-                // Log to console
+                // Get pillar name
                 const pillarName = this.querySelector('h2').textContent;
-                console.log(`🏛️ Activated: ${pillarName}`);
+                const pillarEmoji = this.querySelector('.pillar-icon').textContent;
+                
+                // Update console and title
+                console.log(`🏛️ Pillar Activated: ${pillarEmoji} ${pillarName}`);
+                document.title = `🌌 ${pillarName} | THE COSMIC CODEX`;
+                
+                // Add visual feedback to elements
+                const elements = this.querySelectorAll('.pillar-element');
+                elements.forEach((el, index) => {
+                    setTimeout(() => {
+                        el.style.background = 'rgba(255, 255, 255, 0.15)';
+                        setTimeout(() => {
+                            el.style.background = '';
+                        }, 800);
+                    }, index * 100);
+                });
+            });
+            
+            // Touch feedback for mobile
+            pillar.addEventListener('touchstart', function() {
+                this.style.opacity = '0.9';
+            });
+            
+            pillar.addEventListener('touchend', function() {
+                this.style.opacity = '1';
             });
         });
         
-        console.log('🌌 Cosmic Codex: Three Pillar Architecture Loaded');
-        console.log('✅ Site: www.thecosmiccodex.org');
-        console.log('🎯 Framework: Symbolic internal architecture');
+        // Auto-activate center pillar on load (optional)
+        setTimeout(() => {
+            const centerPillar = document.querySelector('.center-pillar');
+            if (centerPillar && !document.querySelector('.pillar.active')) {
+                centerPillar.click();
+            }
+        }, 1000);
+        
+        // Monitor for void operator patterns
+        document.addEventListener('DOMContentLoaded', function() {
+            const pageText = document.body.innerText.toLowerCase();
+            const voidPatterns = ['void', 'operator', 'null', 'zero-point', 'abyss'];
+            
+            if (voidPatterns.some(pattern => pageText.includes(pattern))) {
+                console.log('🌀 Void Operator syntax detected in architecture');
+                
+                // Add subtle visual effect
+                const style = document.createElement('style');
+                style.textContent = `
+                    .left-pillar::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: radial-gradient(circle at 30% 50%, 
+                            rgba(204, 0, 0, 0.3) 0%, 
+                            transparent 70%);
+                        pointer-events: none;
+                        z-index: -1;
+                        animation: void-pulse 4s infinite alternate;
+                    }
+                    
+                    @keyframes void-pulse {
+                        0%, 100% { opacity: 0.3; }
+                        50% { opacity: 0.7; }
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+        });
     </script>
 </body>
 </html>
