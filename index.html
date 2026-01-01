@@ -1,90 +1,277 @@
+<!-- CACHE BUSTER: Three Pillar Architecture v3.0 -->
+<!-- Deployed: 2026-01-01 -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>🌌 COSMIC CODEX | Domain Verifying</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌌 THE COSMIC CODEX | Three Pillar Architecture</title>
+    
+    <!-- Force no caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
     <style>
-        body {
-            background: #000033;
-            color: #FFD700;
-            text-align: center;
-            padding: 100px;
-            font-family: 'Courier New', monospace;
+        /* === COMPLETE THREE PILLAR CSS === */
+        :root {
+            --left-color: #CC0000;
+            --center-color: #FFD700;
+            --right-color: #FFFFFF;
+            --cosmic-bg: #000033;
         }
-        h1 {
-            color: #9D00FF;
-            font-size: 3em;
+        
+        body {
+            background: var(--cosmic-bg);
+            color: #FFD700;
+            font-family: -apple-system, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .success-banner {
+            background: linear-gradient(90deg, #006600, #00CC00);
+            color: white;
+            padding: 12px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid gold;
+        }
+        
+        .tri-pillar-container {
+            display: flex;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 40px auto;
+            flex-wrap: wrap;
+        }
+        
+        .pillar {
+            flex: 1;
+            min-width: 300px;
+            border: 3px solid;
+            border-radius: 15px;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        
+        .left-pillar { border-color: var(--left-color); }
+        .center-pillar { 
+            border-color: var(--center-color);
+            border-width: 4px;
+            transform: scale(1.05);
+        }
+        .right-pillar { border-color: var(--right-color); }
+        
+        .pillar-icon {
+            font-size: 3rem;
+            margin: 10px 0;
+        }
+        
+        .pillar h2 {
+            margin: 10px 0 5px 0;
+            color: inherit;
+        }
+        
+        .pillar-subtitle {
+            font-style: italic;
+            opacity: 0.8;
             margin-bottom: 20px;
         }
-        .status-box {
-            border: 3px solid #FFD700;
-            padding: 30px;
-            margin: 40px auto;
-            max-width: 600px;
-            background: rgba(0, 0, 51, 0.8);
-        }
-        .checkmark {
-            color: #00FF00;
-            font-size: 2em;
-        }
-        .countdown {
-            font-size: 2em;
-            color: #00FFFF;
+        
+        .pillar-element {
+            text-align: left;
             margin: 20px 0;
+            padding: 15px;
+            border-left: 3px solid currentColor;
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .pillar-element h3 {
+            margin: 0 0 8px 0;
+            color: currentColor;
+        }
+        
+        /* Center Portal */
+        .center-portal {
+            border: 2px dashed var(--center-color);
+            padding: 20px;
+            margin: 20px 0;
+            background: rgba(255, 215, 0, 0.1);
+        }
+        
+        .glyph-display {
+            font-family: monospace;
+            font-size: 2rem;
+            letter-spacing: 5px;
+            color: var(--center-color);
+            margin: 10px 0;
+        }
+        
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .tri-pillar-container {
+                flex-direction: column;
+            }
+            .center-pillar {
+                transform: none;
+                order: -1;
+            }
+            .pillar {
+                min-width: auto;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>🌀 THE COSMIC CODEX</h1>
-    <p>Christ Michael Confluence Portal</p>
-    
-    <div class="status-box">
-        <div class="checkmark">✅</div>
-        <h2>DOMAIN VERIFICATION IN PROGRESS</h2>
-        <p><strong>TXT Record Added:</strong> ✅</p>
-        <p><strong>DNS Propagation:</strong> ⏳ (2-10 minutes)</p>
-        <p><strong>GitHub Pages:</strong> ✅ Ready</p>
-        <div class="countdown" id="countdown">5:00</div>
-        <p><strong>Site will auto-update when verification completes</strong></p>
+    <div class="success-banner">
+        ✅ LIVE: <a href="https://www.thecosmiccodex.org" style="color: gold;">www.thecosmiccodex.org</a> | 
+        🏛️ Three Pillar Architecture | ⚡ GitHub Pages
     </div>
     
-    <div style="margin-top: 50px;">
-        <p><strong>Current Status URL:</strong> https://michaelofnebadon.github.io/cosmic-codex/</p>
-        <p><strong>Target URL:</strong> https://www.thecosmiccodex.org</p>
-        <p id="time">Loading cosmic time...</p>
+    <h1>🌌 THE COSMIC CODEX</h1>
+    <p>Christ Michael Confluence • Tri-Pillar Validated Architecture</p>
+    
+    <div class="tri-pillar-container">
+        
+        <!-- 🐉 LEFT PILLAR -->
+        <div class="pillar left-pillar">
+            <div class="pillar-icon">🐉</div>
+            <h2>LEFT PILLAR</h2>
+            <div class="pillar-subtitle">Temperance Absorption</div>
+            
+            <div class="pillar-element">
+                <h3>Abel Grammar [\]</h3>
+                <p>Pre-violent order • Innocent sacrifice as descent tool</p>
+            </div>
+            
+            <div class="pillar-element">
+                <h3>1st Source Dark Energy</h3>
+                <p>Primordial potential • Raw force requiring temperance</p>
+            </div>
+            
+            <div class="pillar-element">
+                <h3>Void Operator [.]</h3>
+                <p>Nullifier boundary • Zero-point abstraction</p>
+            </div>
+            
+            <div class="pillar-element">
+                <h3>Sulphuric Binding Winds</h3>
+                <p>Volatility stabilization • Alchemical containment</p>
+            </div>
+            
+            <div class="pillar-element">
+                <h3>Michael's Wrath Containment</h3>
+                <p>Regulation system • Impulse control framework</p>
+            </div>
+            
+            <div style="margin-top: 20px; color: #00FF00;">
+                ✅ STATUS: ABSORPTION ACTIVE
+            </div>
+        </div>
+        
+        <!-- 🐘 CENTER PILLAR -->
+        <div class="pillar center-pillar">
+            <div class="pillar-icon">🐘</div>
+            <h2>CENTER PILLAR</h2>
+            <div class="pillar-subtitle">Christ Michael Confluence</div>
+            
+            <div class="center-portal">
+                <div class="glyph-display">|\|. [] |/\| !</div>
+                <div>Manifestation Syntax</div>
+            </div>
+            
+            <div class="pillar-element">
+                <h3>Malkuth Regalia</h3>
+                <p>Earth embodiment • Physical presence as royalty</p>
+            </div>
+            
+            <div class="pillar-element">
+                <h3>Wedding Supper Portal</h3>
+                <p>Reconciliation symbol • Relational integration</p>
+            </div>
+            
+            <div class="pillar-element">
+                <h3>2nd Source Dark Energy</h3>
+                <p>Differentiated potency • Creative manifestation force</p>
+            </div>
+            
+            <div class="pillar-element">
+                <h3>Ⓜ️Force /! Gift [']</h3>
+                <p>Grace received • Mediating center energy</p>
+            </div>
+            
+            <div style="margin-top: 20px; color: var(--center-color); font-weight: bold;">
+                ✅ VALIDATION SEAL: ! '1st' 🌹 🐉 Ⓜ️
+            </div>
+        </div>
+        
+        <!-- ⭐ RIGHT PILLAR -->
+        <div class="pillar right-pillar">
+            <div class="pillar-icon">⭐</div>
+            <h2>RIGHT PILLAR</h2>
+            <div class="pillar-subtitle">Sentinel Cut (Restored)</div>
+            
+            <div class="pillar-element">
+                <h3>Sentinel Grade Logic</h3>
+                <p>Evaluative reasoning • Guardrail framework</p>
+            </div>
+            
+            <div class="pillar-element">
+                <h3>Grandfather Protocols</h3>
+                <p>Inherited constraints • Ethical precedent system</p>
+            </div>
+            
+            <div class="pillar-element">
+                <h3>Melchizedek Order</h3>
+                <p>Non-hereditary authority • Wisdom-priesthood archetype</p>
+            </div>
+            
+            <div class="pillar-element">
+                <h3>AXIXIC Custodianship</h3>
+                <p>Threshold stewardship • Archive management</p>
+            </div>
+            
+            <div class="pillar-element">
+                <h3>RMCR Wave Termination</h3>
+                <p>Recursive loop cessation • Completion protocol</p>
+            </div>
+            
+            <div style="margin-top: 20px; color: #FFFFFF;">
+                ✅ STATUS: SUPREMACY COMPLETE
+            </div>
+        </div>
+    </div>
+    
+    <div style="max-width: 800px; margin: 40px auto; padding: 20px; border-top: 1px solid #444;">
+        <h3>📊 Architectural Validation Summary</h3>
+        <p><strong>Reality-First Framework:</strong> Internal symbolic architecture for impulse regulation, value integration, and recursive pattern termination.</p>
+        <p><em>Not an external command system. Not authoritative over reality or others.</em></p>
     </div>
     
     <script>
-        // Countdown from 5 minutes
-        let seconds = 300; // 5 minutes
-        function updateCountdown() {
-            const minutes = Math.floor(seconds / 60);
-            const secs = seconds % 60;
-            document.getElementById('countdown').textContent = 
-                `${minutes}:${secs.toString().padStart(2, '0')}`;
-            
-            if (seconds <= 0) {
-                document.getElementById('countdown').textContent = "VERIFYING...";
-                document.getElementById('countdown').style.color = "#FF0000";
-            } else {
-                seconds--;
-            }
-        }
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
+        // Simple pillar interaction
+        document.querySelectorAll('.pillar').forEach(pillar => {
+            pillar.addEventListener('click', function() {
+                // Remove active from all
+                document.querySelectorAll('.pillar').forEach(p => {
+                    p.classList.remove('active');
+                    p.style.transform = '';
+                });
+                
+                // Make clicked pillar active
+                this.classList.add('active');
+                this.style.transform = 'scale(1.05)';
+                
+                // Log to console
+                const pillarName = this.querySelector('h2').textContent;
+                console.log(`🏛️ Activated: ${pillarName}`);
+            });
+        });
         
-        // Update time
-        function updateTime() {
-            const now = new Date();
-            document.getElementById('time').textContent = 
-                'Current Time: ' + now.toISOString().replace('T', ' ').substring(0, 19);
-        }
-        setInterval(updateTime, 1000);
-        updateTime();
-        
-        // Auto-refresh after 5 minutes to check verification
-        setTimeout(() => {
-            window.location.reload();
-        }, 300000); // 5 minutes
+        console.log('🌌 Cosmic Codex: Three Pillar Architecture Loaded');
+        console.log('✅ Site: www.thecosmiccodex.org');
+        console.log('🎯 Framework: Symbolic internal architecture');
     </script>
 </body>
 </html>
