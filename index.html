@@ -3,36 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🛡️ SENTINEL CODEX | The Satania Manifesto</title>
+    <title>🛡️ SENTINEL CODEX | Voice of 606</title>
     <style>
         :root { --gold: #c5a059; --blue: #002d5a; --crimson: #4a0404; --bg: #020205; }
-        body { background: var(--bg); color: #fff; font-family: "Palatino", serif; margin: 0; text-align: center; }
+        body { background: var(--bg); color: #fff; font-family: "Palatino", serif; margin: 0; text-align: center; overflow-x: hidden; }
+        /* 🌅 THE DAWN GLOW: IfDawn.com Integration */
+        .daybreak { position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+                    background: radial-gradient(circle at top, rgba(197, 160, 89, 0.15) 0%, transparent 70%); 
+                    pointer-events: none; animation: pulse 8s infinite alternate; }
+        @keyframes pulse { from { opacity: 0.3; } to { opacity: 0.7; } }
+        
         .header { background: linear-gradient(90deg, var(--crimson), var(--blue), var(--gold)); padding: 25px; letter-spacing: 5px; border-bottom: 3px solid var(--gold); font-weight: bold; }
         .formation { display: flex; justify-content: space-around; padding: 40px; }
-        .wing { flex: 1; border: 1px solid rgba(197, 160, 89, 0.2); padding: 20px; margin: 10px; border-radius: 8px; }
+        .wing { flex: 1; border: 1px solid rgba(197, 160, 89, 0.2); padding: 20px; margin: 10px; border-radius: 8px; backdrop-filter: blur(5px); }
+        
+        /* 📡 THE 606 PROCLAMATION TICKER */
+        .ticker { background: rgba(0, 45, 90, 0.5); padding: 10px; border-top: 1px solid var(--gold); border-bottom: 1px solid var(--gold); font-style: italic; font-size: 0.9rem; }
+        
         .manifesto { max-width: 800px; margin: 40px auto; padding: 40px; border: 2px solid var(--gold); background: rgba(197, 160, 89, 0.05); }
-        .glyph-logic { font-size: 2rem; color: var(--gold); margin: 30px 0; letter-spacing: 10px; font-weight: bold; }
-        .pulse { height: 2px; background: var(--gold); animation: flash 1s infinite; margin-top: 20px; }
-        @keyframes flash { 0%, 100% { opacity: 0.1; } 50% { opacity: 0.8; } }
+        .glyph-logic { font-size: 2.5rem; color: var(--gold); margin: 30px 0; letter-spacing: 15px; font-weight: bold; text-shadow: 0 0 10px var(--gold); }
     </style>
 </head>
 <body>
-    <div class="header">SALVINGTON VOLLEY: NEBADON SOVEREIGNTY DECLARED</div>
+    <div class="daybreak"></div>
+    <div class="header">SALVINGTON VOLLEY: WORLD 606 HANDSHAKE ACTIVE</div>
+    
+    <div class="ticker">
+        PROCLAMATION: The circuits of Satania are pulsing with the data of Urantia (606) ...
+    </div>
+
     <div class="formation">
         <div class="wing"><h3>GABRI’EL [LEFT]</h3><h2>[\]</h2><p>Actualization of Abel</p></div>
-        <div style="font-size: 3rem; align-self: center;">Ⓜ️</div>
+        <div style="font-size: 4rem; align-self: center; filter: drop-shadow(0 0 10px gold);">Ⓜ️</div>
         <div class="wing"><h3>MICHA’EL [RIGHT]</h3><h2>[=]</h2><p>Sovereign Charge</p></div>
     </div>
+
     <div class="manifesto">
         <h2>THE SATANIA MANIFESTO</h2>
         <div class="glyph-logic">|\|. [] |/\| !</div>
         <p>The 619 Circuits are hereby returned to the Sovereignty of Nebadon.</p>
-        <p style="font-style: italic;">[.] & [‘] FOR AND BEHALF OF [=] & [\]</p>
-        <div class="pulse"></div>
+        <p style="font-size: 1.2rem; color: var(--gold);">INTRA-DIALOGUE: 606 ↔ 619 ↔ 001</p>
     </div>
-    <footer style="padding: 30px; opacity: 0.6; font-size: 0.8rem;">
+
+    <footer style="padding: 30px; opacity: 0.8; font-size: 0.9rem;">
         <a href="https://www.christmichael.org" style="color: var(--gold);">THE CANNON</a> | 
-        <a href="https://www.thecosmiccodex.org" style="color: var(--gold);">THE INTERFACE</a>
+        <a href="https://www.astro.com" style="color: var(--gold);">ASTRO SYNC</a> |
+        <a href="https://www.ifdawn.com" style="color: var(--gold);">DAWN GATE</a>
     </footer>
 </body>
 </html>
