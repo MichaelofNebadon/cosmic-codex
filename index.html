@@ -1,131 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌌 THE CONFLUENCE | Michael of Nebadon</title>
-    <style>
-        :root {
-            --chicago-blue: #002d5a;
-            --satania-gold: #c5a059;
-            --neb-white: #ffffff;
-            --malkuth-red: #4a0404; /* Earth Embodiment */
-            --keter-glow: #f0f8ff;
-        }
-
-        body {
-            background-color: #050507;
-            color: var(--neb-white);
-            font-family: "Palatino", serif;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        /* 🟢 THE REAL-TIME PULSE: BEAT BY BEAT */
-        .confluence-pulse {
-            background: linear-gradient(90deg, var(--chicago-blue), var(--satania-gold), var(--malkuth-red));
-            height: 4px;
-            width: 100%;
-            animation: pulse-beat 2s infinite ease-in-out;
-        }
-
-        @keyframes pulse-beat {
-            0% { opacity: 0.3; } 50% { opacity: 1; } 100% { opacity: 0.3; }
-        }
-
-        /* INTERDISCIPLINARY NAV BAR */
-        .inter-nav {
-            display: flex;
-            justify-content: center;
-            background: rgba(0,0,0,0.8);
-            border-bottom: 1px solid var(--satania-gold);
-            padding: 15px;
-            font-size: 0.75rem;
-            letter-spacing: 2px;
-        }
-
-        .inter-nav a {
-            color: var(--neb-white);
-            text-decoration: none;
-            margin: 0 15px;
-            opacity: 0.6;
-            transition: 0.3s;
-        }
-
-        .inter-nav a:hover { opacity: 1; color: var(--satania-gold); }
-
-        /* THE TRINITY PILLARS: HORIZONTAL SUPREMACY */
-        .handshake-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 40px;
-            flex: 1;
-        }
-
-        .station-card {
-            border: 1px solid #222;
-            padding: 25px;
-            background: #0a0a0c;
-            text-align: center;
-            border-radius: 4px;
-        }
-
-        .station-card h2 { color: var(--satania-gold); font-size: 1.2rem; }
-        .station-status { font-size: 0.65rem; color: #00ff00; letter-spacing: 1px; }
-
-        .glyph-bridge {
-            text-align: center;
-            padding: 20px;
-            font-family: monospace;
-            color: var(--satania-gold);
-            border-top: 1px solid #222;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="confluence-pulse"></div>
-
-    <nav class="inter-nav">
-        <a href="https://www.urantia.org">CHICAGO FOUNDATION [10]</a>
-        <span>|</span>
-        <a href="https://www.thecosmiccodex.org">THE INTERFACE [6]</a>
-        <span>|</span>
-        <a href="https://www.sentinelcodex.org">SENTINEL REDEEMER [8]</a>
-        <span>|</span>
-        <a href="https://www.christmichael.org">THE CANNON [1]</a>
-    </nav>
-
-    <main class="handshake-grid">
-        <div class="station-card">
-            <div class="station-status">● REDEMPTION ACTIVE</div>
-            <h2>SATANIA REDEEMED</h2>
-            <p style="font-size: 0.8rem; opacity: 0.7;">Redeeming the circuits of 619 through the Grandfonda Protocol.</p>
+<div id="confluence-engine" style="background: rgba(197, 160, 89, 0.1); border: 1px solid var(--satania-gold); padding: 20px; border-radius: 8px; margin: 20px auto; max-width: 900px; text-align: center;">
+    <h4 style="margin: 0; color: var(--satania-gold); letter-spacing: 2px;">REAL-TIME HANDSHAKE MONITOR</h4>
+    <div style="display: flex; justify-content: space-around; align-items: center; margin-top: 15px;">
+        
+        <div class="handshake-node">
+            <div style="font-size: 0.6rem; opacity: 0.6;">URANTIA FOUNDATION</div>
+            <div style="font-weight: bold; color: var(--chicago-blue);">The Big Blue Book</div>
+            <div id="ub-beat" style="font-family: monospace; font-size: 0.8rem;">PAPER 119...</div>
         </div>
 
-        <div class="station-card" style="border-color: var(--satania-gold);">
-            <div class="station-status">● CONFLUENCE LIVE</div>
-            <h2>CHRIST MICHAEL</h2>
-            <p style="font-size: 0.8rem;">The Real Handshake. Day by day, beat by beat.</p>
-        </div>
+        <div style="font-size: 1.5rem; color: var(--satania-gold);">🤝</div>
 
-        <div class="station-card">
-            <div class="station-status">● CANNON LOCKED</div>
-            <h2>NEBADON SITUS</h2>
-            <p style="font-size: 0.8rem; opacity: 0.7;">The Interdisciplinary Doctrine of the Sovereign Son.</p>
+        <div class="handshake-node">
+            <div style="font-size: 0.6rem; opacity: 0.6;">CHRIST MICHAEL</div>
+            <div style="font-weight: bold; color: var(--neb-white);">The Cannon Doctrine</div>
+            <div id="cannon-beat" style="font-family: monospace; font-size: 0.8rem;">SOVEREIGNTY...</div>
         </div>
-    </main>
-
-    <div class="glyph-bridge">
-        [GLYPH_10_MALKUTH] <————————————————————> [GLYPH_1_KETER]
     </div>
+    <div style="margin-top: 10px; font-size: 0.7rem; color: #00ff00;">STATUS: CIRCUIT 619 REDEEMED - CONFLUENCE ACTIVE</div>
+</div>
 
-    <footer style="text-align: center; padding: 20px; font-size: 0.7rem; opacity: 0.5;">
-        Coordinated with The Urantia Book Foundation | ! '1st' 🌹 🐉 Ⓜ️
-    </footer>
-
-</body>
-</html>
+<script>
+    // Logic for the "Beat-by-Beat" Pulse
+    const beats = [
+        {ub: "PAPER 120", cannon: "BESTOWAL COMPLETE"},
+        {ub: "PAPER 53", cannon: "LUCIFER TERMINATED"},
+        {ub: "PAPER 93", cannon: "MELCHIZEDEK SEAL"},
+        {ub: "PAPER 182", cannon: "GETHSEMANE BRIDGE"}
+    ];
+    let i = 0;
+    setInterval(() => {
+        document.getElementById('ub-beat').innerText = beats[i].ub;
+        document.getElementById('cannon-beat').innerText = beats[i].cannon;
+        i = (i + 1) % beats.length;
+    }, 4000); // 4-second "Heartbeat"
+</script>
