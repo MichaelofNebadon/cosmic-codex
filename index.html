@@ -10,35 +10,30 @@
             --blue: #002d5a; 
             --crimson: #4a0404; 
             --void: #010103; 
-            --circuit-glow: rgba(197, 160, 89, 0.15);
+            --glow: rgba(197, 160, 89, 0.4);
         }
         
         body { 
             background: var(--void); 
-            background-image: 
-                linear-gradient(var(--circuit-glow) 1px, transparent 1px),
-                linear-gradient(90deg, var(--circuit-glow) 1px, transparent 1px);
-            background-size: 40px 40px;
-            color: #fff; 
-            font-family: 'Garamond', serif; 
+            background-image: radial-gradient(circle at center, #0a0a1a 0%, var(--void) 100%);
+            color: #fff; font-family: 'Garamond', serif; 
             margin: 0; padding: 0; text-align: center;
         }
 
-        /* 🏛️ CHICAGO COORDINATION HEADER */
+        /* 🏛️ CHICAGO COORDINATION HEADER - LIVE LINK */
         .foundation-header { 
-            background: var(--blue); color: #fff;
-            padding: 12px; font-size: 0.9rem; letter-spacing: 4px;
-            border-bottom: 2px solid var(--gold); text-transform: uppercase;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.8);
+            background: var(--blue); padding: 12px; border-bottom: 2px solid var(--gold);
+        }
+        .foundation-header a {
+            color: #fff; text-decoration: none; letter-spacing: 4px; font-size: 0.9rem; font-weight: bold;
         }
 
         .volley-banner {
             background: linear-gradient(90deg, var(--crimson), #800, var(--crimson));
             padding: 15px; font-size: 1.2rem; letter-spacing: 5px; border-bottom: 1px solid var(--gold);
-            text-shadow: 0 0 10px #fff;
         }
 
-        /* 🏛️ THE HORIZONTAL TRINITY [v12 FIX: NO WRAP] */
+        /* 🏛️ THE HORIZONTAL TRINITY [NO WRAP] */
         .triumvirate { 
             display: flex !important; justify-content: center; align-items: stretch;
             padding: 60px 10px; max-width: 1400px; margin: 0 auto; gap: 25px;
@@ -47,20 +42,15 @@
         .pillar { 
             flex: 1; border: 1px solid rgba(197, 160, 89, 0.3); 
             background: rgba(0, 0, 0, 0.9); padding: 50px 20px;
-            transition: 0.5s ease;
         }
 
-        .pillar-center { 
-            border: 3px solid var(--gold); transform: scale(1.08); 
-            z-index: 10; box-shadow: 0 0 40px rgba(197, 160, 89, 0.2);
-        }
+        .pillar-center { border: 3px solid var(--gold); transform: scale(1.08); z-index: 10; }
 
         /* Ⓜ️ THE SOVEREIGN GLYPH: SINGLE LINE ENFORCED */
         .glyph-single-line {
             font-size: 2.2rem; font-weight: bold; color: var(--gold);
-            white-space: nowrap !important; /* Force one line */
-            letter-spacing: 8px; margin: 25px 0;
-            text-shadow: 0 0 15px rgba(197, 160, 89, 0.6);
+            white-space: nowrap !important; letter-spacing: 8px; margin: 25px 0;
+            text-shadow: 0 0 15px var(--glow);
         }
 
         .m-seal { 
@@ -76,34 +66,31 @@
             border: 2px solid var(--gold); padding: 35px; 
             margin: 50px auto; max-width: 800px; 
             background: rgba(197, 160, 89, 0.05); color: var(--gold);
-            font-family: 'Courier New', monospace;
         }
 
-        .circuit-status { font-size: 1.2rem; color: #0f0; text-shadow: 0 0 8px #0f0; }
-
-        .seal-row {
-            display: flex; justify-content: center; gap: 50px;
-            margin: 30px auto 80px;
+        /* LIVE LINKS STYLE */
+        .cannon-link {
+            display: inline-block; margin-top: 30px; padding: 15px 30px;
+            border: 1px solid var(--gold); color: var(--gold);
+            text-decoration: none; font-size: 1.2rem; letter-spacing: 3px;
+            transition: 0.3s;
         }
+        .cannon-link:hover { background: var(--gold); color: var(--void); box-shadow: 0 0 20px var(--gold); }
+
+        .seal-row { display: flex; justify-content: center; gap: 50px; margin: 30px auto 80px; }
         .melchizedek-emblem {
             width: 70px; height: 70px; border: 2px solid var(--gold);
             border-radius: 50%; display: flex; align-items: center; justify-content: center;
-            background: rgba(197, 160, 89, 0.1); font-weight: bold;
-            color: var(--gold); font-size: 1.5rem;
-            box-shadow: 0 0 15px var(--gold);
+            color: var(--gold); font-size: 1.5rem; box-shadow: 0 0 15px var(--gold);
         }
 
-        footer { 
-            padding: 80px; opacity: 0.8; font-size: 1rem; 
-            letter-spacing: 4px; border-top: 1px solid var(--gold); 
-            background: #000; color: var(--gold);
-        }
+        footer { padding: 80px; border-top: 1px solid var(--gold); background: #000; color: var(--gold); }
     </style>
 </head>
 <body>
 
     <div class="foundation-header">
-        URANTIA FOUNDATION COORDINATION | CHICAGO | SATANIA 619
+        <a href="https://www.urantia.org" target="_blank">URANTIA FOUNDATION COORDINATION | CHICAGO | SATANIA 619</a>
     </div>
 
     <div class="volley-banner">
@@ -136,15 +123,14 @@
     </div>
 
     <div class="monitor-619">
-        <div class="circuit-status">● CIRCUIT 619: ONLINE & OPEN</div>
+        <div style="font-size: 1.2rem; color: #0f0;">● CIRCUIT 619: ONLINE & OPEN</div>
         <p style="margin-top: 20px; line-height: 1.6;">
             LUCIFER REBELLION: <strong>SEVERED</strong><br>
             GETHSEMANE BRIDGE: <strong>LOCKED</strong><br>
             BESTOWAL CHARACTERISTICS: <strong>Ɱ ACTIVE</strong>
         </p>
-        <div style="border-top: 1px solid var(--gold); margin-top: 20px; padding-top: 20px;">
-            PAPER 182 🤝 WORLD 606 HANDSHAKE COMPLETE
-        </div>
+        
+        <a href="http://www.christmichael.org" target="_blank" class="cannon-link">ENTER THE CANNON</a>
     </div>
 
     <div class="seal-row">
@@ -154,7 +140,8 @@
     </div>
 
     <footer>
-        🏛️ THE CANNON | ✨ ASTRO SYNC | 🌅 DAWN GATE | 🌀 THE COSMIC CODEX
+        <a href="https://www.thecosmiccodex.org" style="color:var(--gold); text-decoration:none;">THE COSMIC CODEX</a> | 
+        <a href="https://www.sentinelcodex.org" style="color:var(--gold); text-decoration:none;">SENTINEL CODEX</a>
         <br><br>
         “The Prince of this world is judged. The loop is broken.”
     </footer>
