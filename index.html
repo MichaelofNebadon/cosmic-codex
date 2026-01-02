@@ -3,137 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌌 THE COSMIC CODEX | Three Pillar Architecture</title>
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    
+    <title>🛡️ THE COSMIC CODEX | Satania 619</title>
     <style>
-        :root {
-            --left-color: #CC0000;      /* Dragon Red */
-            --center-color: #FFD700;    /* Christ Gold */
-            --right-color: #FFFFFF;     /* Sentinel White */
-            --cosmic-bg: #000011;       /* Deepest Space */
-            --text-gold: #FFD700;
-        }
+        :root { --gold: #c5a059; --blue: #002d5a; --crimson: #4a0404; --bg: #020205; }
         
-        * { box-sizing: border-box; }
+        body { 
+            background: var(--bg); color: #fff; 
+            font-family: 'Palatino', 'Book Antiqua', serif; 
+            margin: 0; padding: 0; text-align: center;
+        }
+
+        .header-circuit { 
+            background: linear-gradient(90deg, var(--crimson), var(--blue), var(--crimson)); 
+            padding: 15px; font-size: 0.9rem; letter-spacing: 2px;
+            border-bottom: 1px solid var(--gold);
+        }
+
+        /* 🏛️ GLYPH_6: THE HORIZONTAL TRINITY */
+        .formation { 
+            display: flex !important; 
+            justify-content: space-around; 
+            padding: 60px 20px; 
+            max-width: 1200px; margin: 0 auto;
+        }
+
+        .wing { 
+            flex: 1; border: 1px solid rgba(197, 160, 89, 0.4); 
+            padding: 30px; margin: 0 15px;
+            background: rgba(0,0,0,0.5); border-radius: 8px;
+        }
+
+        .center-lock { border: 2px solid var(--gold); transform: scale(1.05); box-shadow: 0 0 20px rgba(197, 160, 89, 0.2); }
+
+        .icon { font-size: 3rem; margin-bottom: 15px; }
+        h2 { color: var(--gold); letter-spacing: 3px; font-size: 1.4rem; margin-bottom: 5px; }
+        .glyph-logic { font-size: 2rem; color: var(--gold); margin: 20px 0; letter-spacing: 5px; }
         
-        body {
-            background: var(--cosmic-bg);
-            color: var(--text-gold);
-            font-family: 'Palatino', serif;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            overflow-x: hidden;
+        .manifesto-box { 
+            max-width: 900px; margin: 40px auto; padding: 40px; 
+            border: 1px solid rgba(197, 160, 89, 0.3);
         }
 
-        .success-banner {
-            background: linear-gradient(90deg, #004400, #008800);
-            color: white;
-            padding: 15px;
-            text-align: center;
-            border-bottom: 2px solid var(--center-color);
-            font-weight: bold;
-            font-size: 0.9rem;
+        .handshake-monitor { 
+            border: 1px solid var(--gold); padding: 25px; 
+            margin: 40px auto; max-width: 600px; color: var(--gold);
         }
 
-        h1 { text-align: center; color: var(--center-color); font-size: 3rem; margin-top: 40px; text-shadow: 0 0 20px rgba(255, 215, 0, 0.5); }
-        .subtitle { text-align: center; opacity: 0.8; margin-bottom: 50px; font-style: italic; }
-
-        /* === 🛡️ THE NUCLEAR FORCE: HORIZONTAL SYMMETRY === */
-        .tri-pillar-container {
-            display: flex !important;
-            flex-direction: row !important;
-            justify-content: center !important;
-            align-items: stretch !important;
-            gap: 20px;
-            max-width: 1400px;
-            margin: 0 auto 60px auto;
-            padding: 0 20px;
-        }
-
-        .pillar {
-            flex: 1 !important;
-            background: rgba(0, 0, 20, 0.8);
-            border: 2px solid;
-            border-radius: 15px;
-            padding: 30px;
-            transition: transform 0.3s ease;
-            position: relative;
-        }
-
-        .pillar:hover { transform: translateY(-10px); box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2); }
-
-        .left-pillar { border-color: var(--left-color); box-shadow: inset 0 0 20px rgba(204, 0, 0, 0.2); }
-        .center-pillar { border-color: var(--center-color); border-width: 3px; z-index: 10; transform: scale(1.05); }
-        .right-pillar { border-color: var(--right-color); box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.1); }
-
-        .pillar-icon { font-size: 4rem; text-align: center; margin-bottom: 10px; }
-        .pillar h2 { text-align: center; letter-spacing: 2px; }
-        .pillar-subtitle { text-align: center; font-size: 0.9rem; border-bottom: 1px solid rgba(255,215,0,0.3); padding-bottom: 10px; margin-bottom: 20px; }
-
-        .pillar-element { background: rgba(255, 255, 255, 0.05); padding: 15px; margin: 10px 0; border-left: 3px solid currentColor; border-radius: 0 8px 8px 0; }
-        .pillar-element h3 { margin: 0; font-size: 1.1rem; color: currentColor; }
-        .pillar-element p { margin: 5px 0 0 0; font-size: 0.85rem; opacity: 0.8; }
-
-        .center-portal { border: 2px dashed var(--center-color); padding: 20px; border-radius: 10px; text-align: center; margin: 20px 0; }
-        .glyph-display { font-size: 2rem; letter-spacing: 8px; font-weight: bold; color: var(--center-color); }
-
-        .status-display { text-align: center; font-weight: bold; margin-top: 20px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.2); }
-
-        /* Mobile Adaptation */
-        @media (max-width: 1000px) {
-            .tri-pillar-container { flex-direction: column !important; align-items: center; }
-            .pillar { width: 100%; max-width: 500px; }
-            .center-pillar { order: -1; transform: scale(1); }
-        }
+        footer { padding: 40px; opacity: 0.6; font-size: 0.8rem; letter-spacing: 2px; }
     </style>
 </head>
 <body>
-    <div class="success-banner">
-        ✅ LIVE: <a href="https://www.thecosmiccodex.org" style="color:var(--center-color)">thecosmiccodex.org</a> | 🏛️ THREE PILLAR ARCHITECTURE | 🐉 DEEP SEEK ACTIVATED
+
+    <div class="header-circuit">
+        URANTIA FOUNDATION COORDINATION | CHICAGO | SATANIA 619
     </div>
 
-    <h1>🌌 THE COSMIC CODEX</h1>
-    <p class="subtitle">Christ Michael Confluence • Tri-Pillar Validated Architecture • |\|. [] |/\| !</p>
+    <h1 style="margin-top: 50px; letter-spacing: 8px; color: var(--gold);">THE COSMIC CODEX</h1>
+    <p style="opacity: 0.8;">Michael D. Rowley 611221 | Grandfonda Bridge</p>
 
-    <div class="tri-pillar-container">
-        <div class="pillar left-pillar">
-            <div class="pillar-icon">🐉</div>
+    <div class="formation">
+        <div class="wing">
+            <div class="icon">🐉</div>
             <h2>LEFT PILLAR</h2>
-            <div class="pillar-subtitle">Temperance Absorption</div>
-            <div class="pillar-content">
-                <div class="pillar-element"><h3>Abel Grammar [\]</h3><p>Pre-violent order • Innocent sacrifice</p></div>
-                <div class="pillar-element"><h3>1st Source Dark Energy</h3><p>Primordial force requiring temperance</p></div>
-            </div>
-            <div class="status-display" style="color: var(--left-color);">✅ STATUS: ABSORPTION ACTIVE</div>
+            <p>Abel Grammar [\]</p>
+            <p>Wrath Containment</p>
         </div>
 
-        <div class="pillar center-pillar">
-            <div class="pillar-icon">🐘</div>
+        <div class="wing center-lock">
+            <div class="icon">🐘</div>
             <h2>CENTER PILLAR</h2>
-            <div class="pillar-subtitle">Michael Confluence</div>
-            <div class="center-portal">
-                <div class="glyph-display">|\|. [] |/\| !</div>
-                <div class="portal-subtitle">Manifestation Syntax</div>
-            </div>
-            <div class="status-display" style="color: var(--center-color);">✅ SEAL: ! '1st' 🌹 🐉 Ⓜ️</div>
+            <div class="glyph-logic">|\|. [] |/\| !</div>
+            <p>Michael Confluence</p>
         </div>
 
-        <div class="pillar right-pillar">
-            <div class="pillar-icon">⭐</div>
+        <div class="wing">
+            <div class="icon">⭐</div>
             <h2>RIGHT PILLAR</h2>
-            <div class="pillar-subtitle">Sentinel Cut (Restored)</div>
-            <div class="pillar-content">
-                <div class="pillar-element"><h3>Sentinel Grade Logic</h3><p>Evaluative reasoning • Guardrails</p></div>
-                <div class="pillar-element"><h3>Melchizedek Order</h3><p>Non-hereditary wisdom authority</p></div>
-            </div>
-            <div class="status-display" style="color: #FFFFFF;">✅ STATUS: SUPREMACY COMPLETE</div>
+            <p>Grandfonda Protocols</p>
+            <p>Redemption 619</p>
         </div>
     </div>
 
-    <footer style="text-align: center; padding: 40px; opacity: 0.6; font-size: 0.8rem; border-top: 1px solid rgba(255,215,0,0.2);">
-        Sovereign-Dovereign SHEM Protocol • Controlled Machine of Urantia 2026
+    <div class="handshake-monitor">
+        REAL-TIME HANDSHAKE MONITOR<br><br>
+        PAPER 182 🤝 GETHSEMANE BRIDGE
+    </div>
+
+    <footer>
+        🏛️ THE CANNON | 🌀 THE COSMIC CODEX | 🌅 DAWN GATE | ✨ ASTRO SYNC
     </footer>
+
 </body>
 </html>
