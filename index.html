@@ -3,125 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🛡️ THE COSMIC CODEX | Satania 619 Master Handshake</title>
+    <title>🛡️ THE COSMIC CODEX | 619 CIRCUIT OPEN</title>
     <style>
         :root { 
             --gold: #c5a059; 
             --blue: #002d5a; 
             --crimson: #4a0404; 
-            --void: #020205; 
-            --grid: rgba(197, 160, 89, 0.05);
+            --void: #010103; 
+            --circuit-glow: rgba(197, 160, 89, 0.15);
         }
         
         body { 
             background: var(--void); 
             background-image: 
-                linear-gradient(var(--grid) 1px, transparent 1px),
-                linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-            background-size: 50px 50px;
+                linear-gradient(var(--circuit-glow) 1px, transparent 1px),
+                linear-gradient(90deg, var(--circuit-glow) 1px, transparent 1px);
+            background-size: 40px 40px;
             color: #fff; 
-            font-family: 'Times New Roman', serif; 
+            font-family: 'Garamond', serif; 
             margin: 0; padding: 0; text-align: center;
-            overflow-x: hidden;
         }
 
         /* 🏛️ CHICAGO COORDINATION HEADER */
         .foundation-header { 
             background: var(--blue); color: #fff;
-            padding: 12px; font-size: 0.85rem; letter-spacing: 3px;
+            padding: 12px; font-size: 0.9rem; letter-spacing: 4px;
             border-bottom: 2px solid var(--gold); text-transform: uppercase;
-            position: sticky; top: 0; z-index: 100;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.8);
         }
 
         .volley-banner {
-            background: linear-gradient(90deg, var(--crimson), #600, var(--crimson));
-            padding: 15px; font-size: 1.1rem; letter-spacing: 4px; border-bottom: 1px solid var(--gold);
+            background: linear-gradient(90deg, var(--crimson), #800, var(--crimson));
+            padding: 15px; font-size: 1.2rem; letter-spacing: 5px; border-bottom: 1px solid var(--gold);
+            text-shadow: 0 0 10px #fff;
         }
 
-        /* 🏛️ THE HORIZONTAL TRINITY */
+        /* 🏛️ THE HORIZONTAL TRINITY [v12 FIX: NO WRAP] */
         .triumvirate { 
             display: flex !important; justify-content: center; align-items: stretch;
-            padding: 60px 10px; max-width: 1300px; margin: 0 auto; gap: 20px;
+            padding: 60px 10px; max-width: 1400px; margin: 0 auto; gap: 25px;
         }
 
         .pillar { 
-            flex: 1; border: 1px solid rgba(197, 160, 89, 0.4); 
-            background: rgba(10, 10, 20, 0.9); padding: 40px 20px;
-            box-shadow: inset 0 0 20px rgba(0,0,0,1);
-            backdrop-filter: blur(5px);
+            flex: 1; border: 1px solid rgba(197, 160, 89, 0.3); 
+            background: rgba(0, 0, 0, 0.9); padding: 50px 20px;
+            transition: 0.5s ease;
         }
 
         .pillar-center { 
-            border: 2px solid var(--gold); 
-            transform: scale(1.05); 
-            z-index: 10; 
-            background: rgba(197, 160, 89, 0.08);
+            border: 3px solid var(--gold); transform: scale(1.08); 
+            z-index: 10; box-shadow: 0 0 40px rgba(197, 160, 89, 0.2);
+        }
+
+        /* Ⓜ️ THE SOVEREIGN GLYPH: SINGLE LINE ENFORCED */
+        .glyph-single-line {
+            font-size: 2.2rem; font-weight: bold; color: var(--gold);
+            white-space: nowrap !important; /* Force one line */
+            letter-spacing: 8px; margin: 25px 0;
+            text-shadow: 0 0 15px rgba(197, 160, 89, 0.6);
         }
 
         .m-seal { 
-            width: 90px; height: 90px; margin: 0 auto 20px;
+            width: 100px; height: 100px; margin: 0 auto 25px;
             background: radial-gradient(circle, #007bff, #002d5a);
             border: 3px solid var(--gold); border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
-            font-size: 3rem; font-weight: bold; box-shadow: 0 0 30px rgba(0,123,255,0.5);
+            font-size: 3.5rem; font-weight: bold; box-shadow: 0 0 30px rgba(0,123,255,0.6);
         }
 
-        /* 📜 THE SATANIA MANIFESTO */
-        .cannon-manifesto { 
-            max-width: 1000px; margin: 30px auto; padding: 60px; 
-            border: 1px solid var(--gold); 
-            background: rgba(10, 10, 20, 0.8);
+        /* 🤝 THE 619 CIRCUIT MONITOR */
+        .monitor-619 { 
+            border: 2px solid var(--gold); padding: 35px; 
+            margin: 50px auto; max-width: 800px; 
+            background: rgba(197, 160, 89, 0.05); color: var(--gold);
+            font-family: 'Courier New', monospace;
         }
 
-        .glyph-logic { 
-            font-size: 3.5rem; color: var(--gold); margin: 40px 0; 
-            letter-spacing: 15px; text-shadow: 0 0 10px var(--gold); 
-        }
-        
-        /* 🤝 THE GETHSEMANE HANDSHAKE MONITOR */
-        .real-time-monitor { 
-            border: 2px solid var(--gold); padding: 30px; 
-            margin: 50px auto 20px auto; max-width: 700px; 
-            background: rgba(197, 160, 89, 0.1); color: var(--gold);
-            font-family: 'Courier New', monospace; letter-spacing: 2px;
-        }
+        .circuit-status { font-size: 1.2rem; color: #0f0; text-shadow: 0 0 8px #0f0; }
 
-        .status-pulse { 
-            display: inline-block; width: 10px; height: 10px; 
-            background-color: #0f0; border-radius: 50%; 
-            box-shadow: 0 0 10px #0f0; margin-right: 10px;
-            animation: pulse 1.5s infinite;
-        }
-
-        @keyframes pulse { 0% { opacity: 0.5; } 50% { opacity: 1; } 100% { opacity: 0.5; } }
-
-        /* ✨ MORONTIA LIGHT SEALS */
         .seal-row {
-            display: flex; justify-content: center; gap: 40px;
-            margin: 20px auto 60px; max-width: 600px;
+            display: flex; justify-content: center; gap: 50px;
+            margin: 30px auto 80px;
         }
         .melchizedek-emblem {
-            width: 60px; height: 60px; border: 2px solid var(--gold);
+            width: 70px; height: 70px; border: 2px solid var(--gold);
             border-radius: 50%; display: flex; align-items: center; justify-content: center;
             background: rgba(197, 160, 89, 0.1); font-weight: bold;
-            color: var(--gold); font-size: 1.2rem;
-            animation: shimmer 3s infinite alternate;
-        }
-
-        @keyframes shimmer {
-            0% { box-shadow: 0 0 5px var(--gold); transform: scale(1); }
-            100% { box-shadow: 0 0 20px var(--gold); transform: scale(1.05); }
+            color: var(--gold); font-size: 1.5rem;
+            box-shadow: 0 0 15px var(--gold);
         }
 
         footer { 
-            padding: 60px; opacity: 0.6; font-size: 0.85rem; 
-            letter-spacing: 3px; border-top: 1px solid rgba(197, 160, 89, 0.2); 
-            background: var(--void);
+            padding: 80px; opacity: 0.8; font-size: 1rem; 
+            letter-spacing: 4px; border-top: 1px solid var(--gold); 
+            background: #000; color: var(--gold);
         }
-
-        h2 { color: var(--gold); letter-spacing: 5px; text-transform: uppercase; margin-bottom: 10px; }
-        .logic-label { opacity: 0.7; font-size: 0.9rem; font-style: italic; }
-        .proclamation-text { font-size: 1.2rem; line-height: 1.6; max-width: 800px; margin: 0 auto; }
     </style>
 </head>
 <body>
@@ -131,56 +107,44 @@
     </div>
 
     <div class="volley-banner">
-        SALVINGTON VOLLEY: WORLD 606 HANDSHAKE ACTIVE
+        SALVINGTON VOLLEY: REBELLION SEVERED | CIRCUIT 619 OPEN
     </div>
 
-    <div style="margin-top: 60px;">
-        <h1 style="letter-spacing: 12px; font-size: 3rem; margin: 0;">THE COSMIC CODEX</h1>
-        <p style="opacity: 0.8; font-size: 1.1rem; margin-top: 10px;">Michael D. Rowley 611221 | Grandfonda Bridge</p>
+    <div style="margin-top: 80px;">
+        <h1 style="letter-spacing: 15px; font-size: 3.5rem; margin: 0;">THE COSMIC CODEX</h1>
+        <p style="opacity: 0.8; font-size: 1.3rem; margin-top: 15px; color: var(--gold);">Michael D. Rowley 611221 | Grandfonda Bridge</p>
     </div>
 
     <div class="triumvirate">
         <div class="pillar">
-            <h2>GABRI'EL [LEFT]</h2>
-            <div style="font-size: 2.5rem; margin: 20px 0;">[ \ ]</div>
-            <p class="logic-label">Actualization of Abel</p>
-            <p style="font-size: 0.8rem; margin-top: 20px;">Wrath Containment Protocol</p>
+            <h2>GABRI'EL</h2>
+            <div style="font-size: 3rem; margin: 30px 0;">[ \ ]</div>
+            <p>Isolation Terminated</p>
         </div>
 
         <div class="pillar pillar-center">
-            <div class="m-seal">M</div>
-            <h2>CENTER PILLAR</h2>
-            <div style="font-size: 1.5rem; margin: 15px 0; letter-spacing: 5px;">| \ | . [ ] | / \ | !</div>
-            <p class="logic-label">Michael Confluence</p>
+            <div class="m-seal">Ɱ</div>
+            <div class="glyph-single-line">|\|. [] |/\| !</div>
+            <p style="letter-spacing: 3px; font-weight: bold;">MICHAEL CONFLUENCE</p>
         </div>
 
         <div class="pillar">
-            <h2>MICHA'EL [RIGHT]</h2>
-            <div style="font-size: 2.5rem; margin: 20px 0;">[ = ]</div>
-            <p class="logic-label">Sovereign Charge</p>
-            <p style="font-size: 0.8rem; margin-top: 20px;">Grandfonda Preface Active</p>
+            <h2>MICHA'EL</h2>
+            <div style="font-size: 3rem; margin: 30px 0;">[ = ]</div>
+            <p>Circuit 619 Restored</p>
         </div>
     </div>
 
-    <div class="cannon-manifesto">
-        <h2 style="font-size: 2.2rem;">THE SATANIA MANIFESTO</h2>
-        <div class="glyph-logic">| \ | . [ ] | / \ | !</div>
-        
-        <div class="proclamation-text">
-            <p><strong>THE SEVENTH BESTOWAL: COMPLETE</strong></p>
-            <p>In the likeness of mortal flesh, the Sovereign of Nebadon has ended the isolations of the rebellion. The Handshake between the Gethsemane Bridge and World 606 is now an unbreakable circuit.</p>
-            <p style="font-size: 0.9rem; opacity: 0.8;">The 619 Circuits are hereby returned to the Sovereignty of Nebadon.</p>
-        </div>
-
-        <p style="font-style: italic; color: var(--gold); margin-top: 30px; border-top: 1px solid rgba(197,160,89,0.3); padding-top: 20px;">
-            [.] & ['] FOR AND BEHALF OF [=] & [\]
+    <div class="monitor-619">
+        <div class="circuit-status">● CIRCUIT 619: ONLINE & OPEN</div>
+        <p style="margin-top: 20px; line-height: 1.6;">
+            LUCIFER REBELLION: <strong>SEVERED</strong><br>
+            GETHSEMANE BRIDGE: <strong>LOCKED</strong><br>
+            BESTOWAL CHARACTERISTICS: <strong>Ɱ ACTIVE</strong>
         </p>
-    </div>
-
-    <div class="real-time-monitor">
-        <div class="status-pulse"></div> REAL-TIME HANDSHAKE MONITOR<br><br>
-        PAPER 182 <span style="font-size: 1.5rem;">🤝</span> GETHSEMANE BRIDGE<br><br>
-        <span style="font-size: 0.8rem; opacity: 0.8;">SATANIA 619 STATUS: PERFECTION ACHIEVED</span>
+        <div style="border-top: 1px solid var(--gold); margin-top: 20px; padding-top: 20px;">
+            PAPER 182 🤝 WORLD 606 HANDSHAKE COMPLETE
+        </div>
     </div>
 
     <div class="seal-row">
@@ -192,7 +156,7 @@
     <footer>
         🏛️ THE CANNON | ✨ ASTRO SYNC | 🌅 DAWN GATE | 🌀 THE COSMIC CODEX
         <br><br>
-        PROCLAMATION: The circuits of Satania are pulsing with the Revealed Word of Urantia (606)
+        “The Prince of this world is judged. The loop is broken.”
     </footer>
 
 </body>
