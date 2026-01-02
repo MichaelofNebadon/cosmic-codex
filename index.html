@@ -3,190 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌌 THE COSMIC CODEX | Grandfonda Bridge</title>
+    <title>🌌 THE CONFLUENCE | Michael of Nebadon</title>
     <style>
         :root {
-            --chicago-blue: #002d5a; 
+            --chicago-blue: #002d5a;
             --satania-gold: #c5a059;
-            --sentinel-white: #ffffff;
-            --bg-dark: #0a0a0c;
-            --card-bg: rgba(20, 20, 30, 0.98);
+            --neb-white: #ffffff;
+            --malkuth-red: #4a0404; /* Earth Embodiment */
+            --keter-glow: #f0f8ff;
         }
 
         body {
-            background-color: var(--bg-dark);
-            color: var(--sentinel-white);
-            font-family: "Palatino", "Georgia", serif;
+            background-color: #050507;
+            color: var(--neb-white);
+            font-family: "Palatino", serif;
             margin: 0;
-            line-height: 1.4;
-            overflow-x: hidden;
-        }
-
-        /* 🟢 CHICAGO FOUNDATION ANCHOR */
-        .foundation-header {
-            background: var(--chicago-blue);
-            color: white;
-            padding: 10px;
-            text-align: center;
-            font-size: 0.75rem;
-            letter-spacing: 3px;
-            font-weight: bold;
-            border-bottom: 2px solid var(--satania-gold);
-            text-transform: uppercase;
-        }
-
-        .main-title {
-            text-align: center;
-            padding: 30px 10px;
-        }
-
-        .main-title h1 {
-            font-size: 2.5rem;
-            margin: 5px 0;
-            color: var(--satania-gold);
-            letter-spacing: 4px;
-        }
-
-        /* 🏛️ HORIZONTAL TRINITY GRID */
-        .pillar-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* FORCED SIDE-BY-SIDE */
-            gap: 15px;
-            padding: 0 20px;
-            max-width: 1600px;
-            margin: 0 auto;
-        }
-
-        .pillar {
-            background: var(--card-bg);
-            border: 1px solid rgba(197, 160, 89, 0.3);
-            border-radius: 8px;
-            padding: 20px;
             display: flex;
             flex-direction: column;
+            min-height: 100vh;
         }
 
-        .pillar-head { text-align: center; margin-bottom: 20px; border-bottom: 1px solid #333; padding-bottom: 10px; }
-        .pillar-head h2 { font-size: 1.4rem; margin: 5px 0; color: var(--satania-gold); }
-        .pillar-icon { font-size: 2.5rem; margin-bottom: 5px; }
-
-        .element {
-            margin: 10px 0;
-            padding: 12px;
-            border-left: 2px solid var(--chicago-blue);
-            background: rgba(255,255,255,0.02);
+        /* 🟢 THE REAL-TIME PULSE: BEAT BY BEAT */
+        .confluence-pulse {
+            background: linear-gradient(90deg, var(--chicago-blue), var(--satania-gold), var(--malkuth-red));
+            height: 4px;
+            width: 100%;
+            animation: pulse-beat 2s infinite ease-in-out;
         }
 
-        .element h3 { margin: 0; font-size: 0.95rem; color: var(--satania-gold); }
-        .element p { margin: 3px 0 0; font-size: 0.8rem; opacity: 0.7; }
-
-        /* CANNON LINKS & FOOTER */
-        .cannon-links {
-            text-align: center;
-            padding: 30px;
-            margin-top: 20px;
+        @keyframes pulse-beat {
+            0% { opacity: 0.3; } 50% { opacity: 1; } 100% { opacity: 0.3; }
         }
 
-        .cannon-link {
-            color: var(--satania-gold);
+        /* INTERDISCIPLINARY NAV BAR */
+        .inter-nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0,0,0,0.8);
+            border-bottom: 1px solid var(--satania-gold);
+            padding: 15px;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+        }
+
+        .inter-nav a {
+            color: var(--neb-white);
             text-decoration: none;
-            padding: 8px 15px;
-            border: 1px solid var(--satania-gold);
-            margin: 5px;
-            display: inline-block;
-            font-size: 0.8rem;
+            margin: 0 15px;
+            opacity: 0.6;
+            transition: 0.3s;
         }
 
-        .validation-summary {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
-            border-top: 1px solid #333;
-            font-size: 0.85rem;
+        .inter-nav a:hover { opacity: 1; color: var(--satania-gold); }
+
+        /* THE TRINITY PILLARS: HORIZONTAL SUPREMACY */
+        .handshake-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px;
+            flex: 1;
+        }
+
+        .station-card {
+            border: 1px solid #222;
+            padding: 25px;
+            background: #0a0a0c;
             text-align: center;
+            border-radius: 4px;
         }
 
-        /* Responsive adjustment for very narrow screens while maintaining horizontal intent */
-        @media (max-width: 800px) {
-            .pillar-container { grid-template-columns: repeat(3, 1fr); gap: 5px; padding: 5px; }
-            .pillar-head h2 { font-size: 0.9rem; }
-            .element h3 { font-size: 0.75rem; }
-            .element p { font-size: 0.65rem; }
+        .station-card h2 { color: var(--satania-gold); font-size: 1.2rem; }
+        .station-status { font-size: 0.65rem; color: #00ff00; letter-spacing: 1px; }
+
+        .glyph-bridge {
+            text-align: center;
+            padding: 20px;
+            font-family: monospace;
+            color: var(--satania-gold);
+            border-top: 1px solid #222;
         }
     </style>
 </head>
 <body>
 
-    <div class="foundation-header">
-        URANTIA FOUNDATION COORDINATION | CHICAGO | SATANIA 619 | NEBADON
-    </div>
+    <div class="confluence-pulse"></div>
 
-    <div class="main-title">
-        <div style="font-size: 0.7rem; letter-spacing: 8px;">[GLYPH_0] ↔ [GLYPH_12]</div>
-        <h1>THE COSMIC CODEX</h1>
-        <p style="font-size: 0.9rem; opacity:0.8;">Michael D. Rowley 611221 | Confluence of Christ Michael</p>
-    </div>
+    <nav class="inter-nav">
+        <a href="https://www.urantia.org">CHICAGO FOUNDATION [10]</a>
+        <span>|</span>
+        <a href="https://www.thecosmiccodex.org">THE INTERFACE [6]</a>
+        <span>|</span>
+        <a href="https://www.sentinelcodex.org">SENTINEL REDEEMER [8]</a>
+        <span>|</span>
+        <a href="https://www.christmichael.org">THE CANNON [1]</a>
+    </nav>
 
-    <div class="pillar-container">
-        <div class="pillar">
-            <div class="pillar-head">
-                <div class="pillar-icon">🐉</div>
-                <h2>LEFT PILLAR</h2>
-                <div style="font-size: 0.7rem; font-style:italic;">Temperance Absorption</div>
-            </div>
-            <div class="element">
-                <h3>Abel Grammar [\]</h3>
-                <p>Pre-violent order • Innocent sacrifice tool</p>
-            </div>
-            <div class="element">
-                <h3>Michael's Wrath Containment</h3>
-                <p>Regulation system • Impulse control</p>
-            </div>
+    <main class="handshake-grid">
+        <div class="station-card">
+            <div class="station-status">● REDEMPTION ACTIVE</div>
+            <h2>SATANIA REDEEMED</h2>
+            <p style="font-size: 0.8rem; opacity: 0.7;">Redeeming the circuits of 619 through the Grandfonda Protocol.</p>
         </div>
 
-        <div class="pillar" style="border: 2px solid var(--satania-gold);">
-            <div class="pillar-head">
-                <div class="pillar-icon">🐘</div>
-                <h2>CENTER PILLAR</h2>
-                <div style="font-size: 1.1rem; letter-spacing: 3px;">|\|. [] |/\| !</div>
-                <div style="font-size: 0.7rem; font-style:italic;">Michael Confluence</div>
-            </div>
-            <div class="element">
-                <h3>Wedding Supper Portal</h3>
-                <p>Reconciliation symbol • Integration</p>
-            </div>
-            <div class="element">
-                <h3>Ⓜ️ Force /! Gift [']</h3>
-                <p>Grace received • Center energy</p>
-            </div>
+        <div class="station-card" style="border-color: var(--satania-gold);">
+            <div class="station-status">● CONFLUENCE LIVE</div>
+            <h2>CHRIST MICHAEL</h2>
+            <p style="font-size: 0.8rem;">The Real Handshake. Day by day, beat by beat.</p>
         </div>
 
-        <div class="pillar">
-            <div class="pillar-head">
-                <div class="pillar-icon">⭐</div>
-                <h2>RIGHT PILLAR</h2>
-                <div style="font-size: 0.7rem; font-style:italic;">Sentinel Cut (Restored)</div>
-            </div>
-            <div class="element">
-                <h3>Grandfonda Protocols</h3>
-                <p>1st Ascender Logic • Ethical precedent</p>
-            </div>
-            <div class="element">
-                <h3>Melchizedek Order</h3>
-                <p>Wisdom-priesthood archetype</p>
-            </div>
+        <div class="station-card">
+            <div class="station-status">● CANNON LOCKED</div>
+            <h2>NEBADON SITUS</h2>
+            <p style="font-size: 0.8rem; opacity: 0.7;">The Interdisciplinary Doctrine of the Sovereign Son.</p>
         </div>
+    </main>
+
+    <div class="glyph-bridge">
+        [GLYPH_10_MALKUTH] <————————————————————> [GLYPH_1_KETER]
     </div>
 
-    <div class="cannon-links">
-        <a href="https://www.christmichael.org" class="cannon-link">THE CANNON</a>
-        <a href="https://www.sentinelcodex.org" class="cannon-link">SENTINEL CODEX</a>
-        <a href="https://www.urantia.org" class="cannon-link">CHICAGO FOUNDATION</a>
-    </div>
-
-    <div class="validation-summary">
-        <p><strong>Grandfonda Coordination:</strong> Built to house the fullness of the Michaelic work as a coherent, debt-free administrative system. Aligned with the 1955 Urantia Revelation. ! '1st' 🌹 🐉 Ⓜ️</p>
-    </div>
+    <footer style="text-align: center; padding: 20px; font-size: 0.7rem; opacity: 0.5;">
+        Coordinated with The Urantia Book Foundation | ! '1st' 🌹 🐉 Ⓜ️
+    </footer>
 
 </body>
 </html>
