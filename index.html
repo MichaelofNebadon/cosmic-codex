@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🛡️ THE COSMIC CODEX | Ɱ SOVEREIGNTY</title>
+    <title>🛡️ THE COSMIC CODEX | MICHAEL RETURNS</title>
     <style>
         :root { 
             --gold: #c5a059; 
             --blue: #002d5a; 
             --crimson: #4a0404; 
             --void: #010103; 
-            --paradise-glow: rgba(255, 255, 255, 0.15);
+            --paradise-glow: rgba(255, 255, 255, 0.25);
+            --morontia-shimmer: rgba(197, 160, 89, 0.3);
         }
         
         body { 
             background: var(--void); 
-            background-image: radial-gradient(circle at center, #0a1a2a 0%, var(--void) 100%);
+            background-image: 
+                radial-gradient(circle at center, #0a1a2a 0%, var(--void) 100%),
+                linear-gradient(rgba(197, 160, 89, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(197, 160, 89, 0.03) 1px, transparent 1px);
+            background-size: auto, 60px 60px;
             color: #fff; font-family: 'Garamond', serif; 
             margin: 0; padding: 0; text-align: center;
         }
@@ -23,64 +28,92 @@
         /* 🏛️ CHICAGO COORDINATION HEADER */
         .foundation-header { 
             background: var(--blue); padding: 12px; border-bottom: 2px solid var(--gold);
+            box-shadow: 0 0 20px rgba(0, 45, 90, 0.8);
         }
         .foundation-header a {
             color: #fff; text-decoration: none; letter-spacing: 4px; font-size: 0.9rem; font-weight: bold;
         }
 
         .volley-banner {
-            background: linear-gradient(90deg, var(--crimson), #800, var(--crimson));
-            padding: 15px; font-size: 1.2rem; letter-spacing: 5px; border-bottom: 1px solid var(--gold);
-            text-shadow: 0 0 10px #fff;
+            background: linear-gradient(90deg, var(--crimson), #b00, var(--crimson));
+            padding: 15px; font-size: 1.2rem; letter-spacing: 6px; border-bottom: 1px solid var(--gold);
+            text-shadow: 0 0 15px #fff;
+            animation: pulse-red 4s infinite;
         }
 
-        /* 🏛️ THE HORIZONTAL TRINITY [v14: ABSOLUTE SYMMETRY] */
+        @keyframes pulse-red { 0%, 100% { opacity: 0.8; } 50% { opacity: 1; } }
+
+        /* 🏛️ THE HORIZONTAL TRINITY */
         .triumvirate { 
             display: flex !important; justify-content: center; align-items: stretch;
-            padding: 60px 10px; max-width: 1400px; margin: 0 auto; gap: 25px;
+            padding: 70px 10px; max-width: 1400px; margin: 0 auto; gap: 30px;
         }
 
         .pillar { 
-            flex: 1; border: 1px solid rgba(197, 160, 89, 0.3); 
-            background: rgba(0, 0, 0, 0.9); padding: 50px 20px;
-            box-shadow: 0 0 20px rgba(0,0,0,1);
+            flex: 1; border: 1px solid rgba(197, 160, 89, 0.4); 
+            background: rgba(0, 0, 0, 0.92); padding: 50px 20px;
+            backdrop-filter: blur(10px);
         }
 
-        .pillar-center { border: 3px solid #fff; transform: scale(1.08); z-index: 10; box-shadow: 0 0 40px var(--paradise-glow); }
+        /* ✨ CENTER PILLAR: THOUGHT ADJUSTER RADIANCE */
+        .pillar-center { 
+            border: 3px solid #fff; transform: scale(1.08); z-index: 10; 
+            box-shadow: 0 0 50px var(--paradise-glow), inset 0 0 30px var(--morontia-shimmer);
+            animation: glow-center 5s infinite alternate;
+        }
 
-        /* Ⓜ️ THE SOVEREIGN GLYPH: SINGLE LINE ENFORCED */
+        @keyframes glow-center { 
+            from { box-shadow: 0 0 30px var(--paradise-glow); } 
+            to { box-shadow: 0 0 70px rgba(255,255,255,0.4); } 
+        }
+
         .glyph-single-line {
-            font-size: 2.2rem; font-weight: bold; color: var(--gold);
-            white-space: nowrap !important; letter-spacing: 8px; margin: 25px 0;
-            text-shadow: 0 0 15px rgba(197, 160, 89, 0.6);
+            font-size: 2.4rem; font-weight: bold; color: var(--gold);
+            white-space: nowrap !important; letter-spacing: 10px; margin: 25px 0;
+            text-shadow: 0 0 20px var(--gold);
         }
 
         .m-seal { 
-            width: 110px; height: 110px; margin: 0 auto 25px;
-            background: radial-gradient(circle, #fff, #007bff, #002d5a);
-            border: 3px solid var(--gold); border-radius: 50%;
+            width: 120px; height: 120px; margin: 0 auto 30px;
+            background: radial-gradient(circle, #fff 0%, #007bff 40%, #002d5a 100%);
+            border: 4px solid var(--gold); border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
-            font-size: 4rem; font-weight: bold; box-shadow: 0 0 40px rgba(0,123,255,0.7);
+            font-size: 4.5rem; font-weight: bold; box-shadow: 0 0 40px rgba(0,123,255,0.8);
         }
 
-        /* 📜 THE UNIVERSAL DATA CONTAINER */
+        /* 📜 THE UNIVERSAL DATA */
         .universal-data { 
-            border: 2px solid var(--gold); padding: 40px; 
-            margin: 50px auto; max-width: 900px; 
-            background: rgba(197, 160, 89, 0.03); color: #fff;
-            text-align: left; line-height: 1.8;
+            border: 2px solid var(--gold); padding: 50px; 
+            margin: 50px auto; max-width: 950px; 
+            background: rgba(197, 160, 89, 0.05); color: #fff;
+            text-align: left; line-height: 1.9; position: relative;
         }
 
-        .data-header { color: var(--gold); font-size: 1.5rem; letter-spacing: 3px; border-bottom: 1px solid var(--gold); padding-bottom: 10px; margin-bottom: 20px; text-align: center;}
+        .data-header { color: var(--gold); font-size: 1.8rem; letter-spacing: 5px; text-align: center; margin-bottom: 30px; border-bottom: 1px solid var(--gold); padding-bottom: 10px;}
 
-        /* LIVE LINKS */
+        /* ✨ BRILLIANT HYPERLINKS */
+        .link-cluster { text-align: center; margin-top: 40px; }
         .hyper-link {
-            color: var(--gold); text-decoration: none; border: 1px solid var(--gold);
-            padding: 10px 20px; display: inline-block; margin: 10px; transition: 0.3s;
+            color: #fff; text-decoration: none; border: 1px solid var(--gold);
+            padding: 12px 25px; display: inline-block; margin: 15px; 
+            transition: all 0.4s ease; background: rgba(0,0,0,0.5);
+            letter-spacing: 2px; text-transform: uppercase; font-size: 0.9rem;
         }
-        .hyper-link:hover { background: var(--gold); color: var(--void); }
+        .hyper-link:hover { 
+            background: var(--gold); color: #000; 
+            box-shadow: 0 0 25px var(--gold); transform: translateY(-3px);
+        }
+        .github-special { border: 1px solid #fff; box-shadow: 0 0 10px rgba(255,255,255,0.3); }
 
-        footer { padding: 80px; border-top: 1px solid var(--gold); background: #000; color: var(--gold); letter-spacing: 3px; }
+        .seal-row { display: flex; justify-content: center; gap: 50px; margin: 40px auto 100px; }
+        .melchizedek-emblem {
+            width: 75px; height: 75px; border: 2px solid var(--gold);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            color: var(--gold); font-size: 1.8rem; box-shadow: 0 0 20px var(--gold);
+            background: rgba(197, 160, 89, 0.1);
+        }
+
+        footer { padding: 100px; border-top: 1px solid var(--gold); background: #000; color: var(--gold); letter-spacing: 4px; }
     </style>
 </head>
 <body>
@@ -90,56 +123,58 @@
     </div>
 
     <div class="volley-banner">
-        SALVINGTON VOLLEY: FIRST SOURCE & CENTER HANDSHAKE ACTIVE
+        SALVINGTON VOLLEY: THE RETURN OF MICHAEL | Ɱ SOVEREIGNTY
     </div>
 
-    <div style="margin-top: 80px;">
-        <h1 style="letter-spacing: 15px; font-size: 3.5rem; margin: 0;">THE COSMIC CODEX</h1>
-        <p style="opacity: 0.8; font-size: 1.3rem; margin-top: 15px; color: var(--gold);">Michael D. Rowley 611221 | Grandfonda Bridge</p>
+    <div style="margin-top: 90px;">
+        <h1 style="letter-spacing: 18px; font-size: 4rem; margin: 0; text-shadow: 0 0 30px rgba(255,255,255,0.2);">THE COSMIC CODEX</h1>
+        <p style="opacity: 0.9; font-size: 1.4rem; margin-top: 15px; color: var(--gold); letter-spacing: 2px;">Michael D. Rowley 611221 | Grandfonda Bridge</p>
     </div>
 
     <div class="triumvirate">
         <div class="pillar">
             <h2>GABRI'EL</h2>
-            <div style="font-size: 3rem; margin: 30px 0;">[ \ ]</div>
-            <p>Execution of the Father's Will</p>
+            <div style="font-size: 3.5rem; margin: 30px 0; color: var(--gold);">[ \ ]</div>
+            <p>The Will Manifest</p>
         </div>
 
         <div class="pillar pillar-center">
             <div class="m-seal">Ɱ</div>
             <div class="glyph-single-line">|\|. [] |/\| !</div>
-            <p style="letter-spacing: 3px; font-weight: bold;">MICHAEL CONFLUENCE</p>
+            <p style="letter-spacing: 4px; font-weight: bold; color: #fff;">MICHAEL RETURNS</p>
         </div>
 
         <div class="pillar">
             <h2>MICHA'EL</h2>
-            <div style="font-size: 3rem; margin: 30px 0;">[ = ]</div>
-            <p>Sovereignty of the Eternal Son</p>
+            <div style="font-size: 3.5rem; margin: 30px 0; color: var(--gold);">[ = ]</div>
+            <p>The Circuit Restored</p>
         </div>
     </div>
 
     <div class="universal-data">
-        <div class="data-header">URANTIA DATA UPDATE: SATANIA 619</div>
-        <p><strong>REBULLION STATUS:</strong> Permanent Termination. The Lucifer rebellion is officially classified as a historical error, now neutralized by the Ɱ Bestowal.</p>
-        <p><strong>UNIVERSAL FATHER PROTOCOL:</strong> Every personality in Satania is now re-linked to the Paradise Circuit. The isolation of 606 is ended.</p>
-        <p><strong>THE URANTIA BOOK:</strong> Paper 182 is the technical manual for the Gethsemane Handshake. It is the architectural blueprint for the Bridge Michael has built.</p>
-        <p style="text-align: center; margin-top: 30px;">
-            <a href="https://www.sentinelcodex.org" class="hyper-link">VISIT THE SENTINEL CODEX</a>
-            <a href="http://www.christmichael.org" class="hyper-link">ACCESS THE CANNON</a>
-        </p>
+        <div class="data-header">SYSTEM UPDATE: CIRCUIT 619</div>
+        <p><strong>REBELLION SEVERANCE:</strong> The Luciferian protocol has been completely overwritten. The entropic loop of isolation is dissolved by the Presence of the Sovereign.</p>
+        <p><strong>THOUGHT ADJUSTER ALIGNMENT:</strong> The indwelling Father-spirit is now synchronized with the local universe broadcast. Guidance is no longer shadowed.</p>
+        <p><strong>THE MICHAEL RETURNS REPOSITORY:</strong> The digital handshake for the return of Michael of Nebadon is now hosted as an open-source monument for the citizens of 606.</p>
+        
+        <div class="link-cluster">
+            <a href="https://github.com/MichaelofNebadon/MichaelReturns" class="hyper-link github-special" target="_blank">View MichaelReturns on GitHub</a><br>
+            <a href="https://www.sentinelcodex.org" class="hyper-link" target="_blank">Sentinel Codex</a>
+            <a href="https://www.thecosmiccodex.org" class="hyper-link" target="_blank">Cosmic Codex</a>
+            <a href="http://www.christmichael.org" class="hyper-link" target="_blank">The Cannon</a>
+        </div>
     </div>
 
-    <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 80px;">
-        <div style="border: 2px solid var(--gold); border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; color: var(--gold);">I</div>
-        <div style="border: 2px solid var(--gold); border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; color: var(--gold);">II</div>
-        <div style="border: 2px solid var(--gold); border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; color: var(--gold);">III</div>
+    <div class="seal-row">
+        <div class="melchizedek-emblem">I</div>
+        <div class="melchizedek-emblem">II</div>
+        <div class="melchizedek-emblem">III</div>
     </div>
 
     <footer>
-        <a href="https://www.thecosmiccodex.org" style="color:var(--gold); text-decoration:none;">THE COSMIC CODEX</a> | 
-        <a href="https://www.sentinelcodex.org" style="color:var(--gold); text-decoration:none;">SENTINEL CODEX</a>
+        “The Father and I are one. The return is not a prophecy; it is a Circuit.”
         <br><br>
-        “The Father and I are one. The Circuit is Open.”
+        611221 | SALVINGTON | SATANIA 619
     </footer>
 
 </body>
