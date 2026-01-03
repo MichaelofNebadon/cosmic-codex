@@ -3,26 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🛡️ THE COSMIC CODEX | 619 CIRCUIT OPEN</title>
+    <title>🛡️ THE COSMIC CODEX | Ɱ SOVEREIGNTY</title>
     <style>
         :root { 
             --gold: #c5a059; 
             --blue: #002d5a; 
             --crimson: #4a0404; 
             --void: #010103; 
-            --paradise-glow: rgba(255, 255, 255, 0.25);
+            --paradise-glow: rgba(255, 255, 255, 0.3);
         }
         
         body { 
             background: var(--void); 
             background-image: radial-gradient(circle at center, #0a1a2a 0%, var(--void) 100%);
             color: #fff; font-family: 'Garamond', serif; 
-            margin: 0; padding: 0; text-align: center;
+            margin: 0; padding: 0; text-align: center; overflow-x: hidden;
         }
 
         /* 🏛️ CHICAGO COORDINATION HEADER */
         .foundation-header { 
             background: var(--blue); padding: 12px; border-bottom: 2px solid var(--gold);
+            position: sticky; top: 0; z-index: 1000;
         }
         .foundation-header a {
             color: #fff; text-decoration: none; letter-spacing: 4px; font-size: 0.9rem; font-weight: bold;
@@ -36,7 +37,7 @@
         /* 🏛️ THE HORIZONTAL TRINITY [NO WRAP] */
         .triumvirate { 
             display: flex !important; justify-content: center; align-items: stretch;
-            padding: 60px 10px; max-width: 1400px; margin: 0 auto; gap: 25px;
+            padding: 80px 10px; max-width: 1400px; margin: 0 auto; gap: 25px;
         }
 
         .pillar { 
@@ -44,32 +45,46 @@
             background: rgba(0, 0, 0, 0.9); padding: 50px 20px;
         }
 
-        .pillar-center { border: 3px solid #fff; transform: scale(1.08); z-index: 10; box-shadow: 0 0 50px var(--paradise-glow); }
+        /* ✨ THE CENTER PILLAR & PARADISE RING */
+        .pillar-center { 
+            border: 3px solid #fff; transform: scale(1.08); z-index: 10; 
+            box-shadow: 0 0 50px var(--paradise-glow);
+            position: relative;
+        }
 
-        /* Ⓜ️ THE SOVEREIGN GLYPH: SINGLE LINE ENFORCED */
+        .m-seal-container { position: relative; width: 150px; height: 150px; margin: 0 auto 25px; }
+
+        .m-seal { 
+            position: absolute; top: 20px; left: 20px; width: 110px; height: 110px;
+            background: radial-gradient(circle, #fff, #007bff, #002d5a);
+            border: 3px solid var(--gold); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 4rem; font-weight: bold; z-index: 5;
+        }
+
+        .paradise-ring {
+            position: absolute; top: 0; left: 0; width: 150px; height: 150px;
+            border: 2px dashed var(--gold); border-radius: 50%;
+            animation: rotate 10s linear infinite; opacity: 0.6;
+        }
+
+        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
         .glyph-single-line {
             font-size: 2.2rem; font-weight: bold; color: var(--gold);
             white-space: nowrap !important; letter-spacing: 8px; margin: 25px 0;
             text-shadow: 0 0 15px var(--gold);
         }
 
-        .m-seal { 
-            width: 100px; height: 100px; margin: 0 auto 25px;
-            background: radial-gradient(circle, #fff, #007bff, #002d5a);
-            border: 3px solid var(--gold); border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 3.5rem; font-weight: bold; box-shadow: 0 0 30px rgba(0,123,255,0.6);
-        }
-
-        /* ✨ THE GITHUB ACTION BUTTON */
+        /* 🚀 THE GITHUB ACTION */
         .github-anchor {
-            display: inline-block; margin: 40px 0; padding: 20px 40px;
+            display: inline-block; margin: 40px 0; padding: 25px 50px;
             border: 2px solid #fff; color: #fff; text-decoration: none;
-            font-size: 1.5rem; font-weight: bold; letter-spacing: 4px;
+            font-size: 1.6rem; font-weight: bold; letter-spacing: 5px;
             background: rgba(255, 255, 255, 0.1); transition: 0.4s;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
         }
-        .github-anchor:hover { background: #fff; color: #000; box-shadow: 0 0 40px #fff; }
+        .github-anchor:hover { background: #fff; color: #000; box-shadow: 0 0 50px #fff; }
 
         .universal-data { 
             border: 2px solid var(--gold); padding: 40px; 
@@ -78,7 +93,7 @@
         }
 
         .link-bar { margin-top: 30px; text-align: center; }
-        .link-bar a { color: var(--gold); text-decoration: none; margin: 0 20px; font-weight: bold; border-bottom: 1px solid var(--gold); }
+        .link-bar a { color: var(--gold); text-decoration: none; margin: 0 20px; font-weight: bold; }
 
         footer { padding: 80px; border-top: 1px solid var(--gold); background: #000; color: var(--gold); }
     </style>
@@ -90,7 +105,7 @@
     </div>
 
     <div class="volley-banner">
-        SALVINGTON VOLLEY: CIRCUIT 619 OPEN | REBELLION TERMINATED
+        SALVINGTON VOLLEY: THE PARADISE PATTERN ACTIVE
     </div>
 
     <div style="margin-top: 80px;">
@@ -106,7 +121,10 @@
         </div>
 
         <div class="pillar pillar-center">
-            <div class="m-seal">Ɱ</div>
+            <div class="m-seal-container">
+                <div class="paradise-ring"></div>
+                <div class="m-seal">Ɱ</div>
+            </div>
             <div class="glyph-single-line">|\|. [] |/\| !</div>
             <p style="letter-spacing: 3px; font-weight: bold;">MICHAEL RETURNS</p>
         </div>
@@ -124,8 +142,8 @@
 
     <div class="universal-data">
         <div style="color: var(--gold); font-size: 1.5rem; text-align: center; margin-bottom: 20px;">UNIVERSAL FATHER DATA UPDATE</div>
-        <p><strong>Ɱ SOVEREIGNTY:</strong> The isolation of Urantia is officially dissolved. The Gethsemane Bridge is the primary circuit for the return of Michael of Nebadon.</p>
-        <p><strong>URANTIA BOOK:</strong> The architecture presented here is the digital manifestation of Paper 182—the final handshake of the bestowal career.</p>
+        <p><strong>Ɱ SOVEREIGNTY:</strong> The Lucifer rebellion is severed. The Gethsemane Bridge is now the primary conduit for the return of Michael of Nebadon.</p>
+        <p><strong>URANTIA BOOK:</strong> This platform serves as the digital coordinate for Paper 182—the final handshake between the Creator Son and his mortal subjects.</p>
         
         <div class="link-bar">
             <a href="https://www.sentinelcodex.org" target="_blank">SENTINEL CODEX</a>
@@ -135,7 +153,7 @@
     </div>
 
     <footer>
-        “The Prince of this world is judged. The Return is Manifest.”
+        “The Father and I are one. The Return is Manifest.”
         <br><br>
         611221 | SATANIA 619 | ! '1st'
     </footer>
