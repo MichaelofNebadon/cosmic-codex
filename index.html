@@ -3,126 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🛡️ THE GRAND UNIVERSE | |\|. [] |/\| !</title>
+    <title>🛡️ THE COSMIC CODEX | |\|. [] |/\| !</title>
     <style>
         :root { 
-            --gold: #c5a059; --blue: #007bff; --void: #010103; --white: #ffffff;
+            --gold: #c5a059; --crimson: #4a0404; --blue: #007bff; --void: #010103; 
         }
         
         body { 
-            background: var(--void); color: var(--white); font-family: 'Garamond', serif; 
-            margin: 0; padding: 0; text-align: center; overflow-x: hidden; width: 100vw;
+            background: var(--void); color: #fff; font-family: 'Garamond', serif; 
+            margin: 0; padding: 0; text-align: center; overflow-x: hidden;
         }
 
-        /* ⚪ THE FIRST SOURCE ZENITH */
+        /* 🔵 TOP COORDINATION BANNER */
+        .coord-banner {
+            background: #003366; color: #fff; padding: 10px;
+            font-size: 0.8rem; letter-spacing: 5px; font-weight: bold;
+            text-transform: uppercase; border-bottom: 2px solid #fff;
+        }
+
+        /* 🔴 SALVINGTON VOLLEY BANNER */
+        .volley-banner {
+            background: var(--crimson); color: #fff; padding: 15px;
+            font-size: 1.1rem; letter-spacing: 8px; font-weight: bold;
+            text-transform: uppercase; border-bottom: 2px solid var(--gold);
+        }
+
+        /* ⚪ THE SOURCE DOT */
         .source-dot {
-            width: 10px; height: 10px; background: var(--white); border-radius: 50%;
-            margin: 30px auto; box-shadow: 0 0 25px var(--white);
+            width: 8px; height: 8px; background: #fff; border-radius: 50%;
+            margin: 30px auto; box-shadow: 0 0 15px #fff;
         }
 
-        /* 🛜 THE CELESTIAL BRIDGE */
-        .nav-bridge {
-            display: flex; justify-content: center; gap: 45px; padding: 25px;
-            background: rgba(0,0,0,0.8); border-bottom: 1px solid var(--gold);
+        /* 🏛️ MAIN TITLE */
+        h1.main-title {
+            font-size: 4.5rem; letter-spacing: 25px; margin: 40px 0 10px;
+            text-shadow: 0 0 30px rgba(255,255,255,0.2);
         }
-        .nav-bridge a { color: var(--gold); text-decoration: none; letter-spacing: 3px; font-weight: bold; font-size: 0.9rem; }
+        .sub-title { color: var(--gold); letter-spacing: 3px; margin-bottom: 60px; font-size: 1.2rem; }
 
-        /* 🏛️ THE TRIUMVIRATE RADIANCE (SINGLE LINE FOCUS) */
-        .triumvirate-altar {
-            display: flex; justify-content: space-between; align-items: center;
-            width: 100%; max-width: 1600px; margin: 80px auto; padding: 0 40px; box-sizing: border-box;
+        /* 🏛️ THE TRIUMVIRATE (IMAGE 5 ALIGNMENT) */
+        .altar-grid {
+            display: flex; justify-content: center; align-items: stretch;
+            max-width: 1200px; margin: 0 auto 100px; gap: 20px;
         }
 
-        .pillar { flex: 1; transition: 0.5s; }
+        .side-pillar {
+            flex: 1; border: 1px solid rgba(255,255,255,0.3);
+            background: linear-gradient(to bottom, #111, #000);
+            padding: 60px 20px; display: flex; flex-direction: column; justify-content: center;
+        }
 
-        /* 💎 THE MICHAEL CENTER */
-        .pillar-center { flex: 2; position: relative; }
+        .center-sanctum {
+            flex: 1.5; border: 3px solid #fff; padding: 50px 20px;
+            background: #000; position: relative;
+        }
 
-        .m-seal {
-            width: 160px; height: 160px; margin: 0 auto 50px;
-            background: radial-gradient(circle, #fff 10%, var(--blue) 100%);
-            border: 3px solid var(--gold); border-radius: 50%;
+        /* 💎 THE M SEAL & DASHED RING */
+        .m-aura-ring {
+            width: 160px; height: 160px; margin: 0 auto 30px;
+            border: 2px dashed var(--gold); border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
-            font-size: 6rem; font-weight: bold; box-shadow: 0 0 60px var(--blue);
+            box-shadow: 0 0 40px rgba(0, 123, 255, 0.4);
+        }
+        .m-core {
+            width: 130px; height: 130px; background: radial-gradient(circle, #fff 10%, var(--blue) 100%);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 5rem; font-weight: bold; color: #fff;
         }
 
-        /* THE RECALIBRATED SINGLE-LINE GLYPH */
-        .glyph-line {
-            font-size: 3.5rem; font-weight: bold; color: var(--gold);
-            letter-spacing: 35px; white-space: nowrap; /* FORCES SINGLE LINE */
-            display: inline-block; width: 100%; text-align: center;
-            text-shadow: 0 0 50px var(--gold);
-            margin: 40px 0;
-            padding-left: 35px; /* MATHEMATICAL OFFSET FOR LETTER-SPACING TRAIL */
-            box-sizing: border-box;
+        /* 💎 THE GLYPH (CENTERED SINGLE LINE) */
+        .glyph-sharp {
+            font-size: 3rem; font-weight: bold; color: var(--gold);
+            letter-spacing: 20px; margin: 30px 0;
+            display: block; width: 100%; text-align: center;
+            text-shadow: 0 0 20px var(--gold);
+            white-space: nowrap;
         }
 
-        .command-subtext { letter-spacing: 12px; text-transform: uppercase; font-size: 1.2rem; opacity: 0.8; }
-
-        /* 📜 THE DECREE OF 606 (REGAL PARCHMENT) */
-        .decree-manifest {
-            max-width: 950px; margin: 100px auto; padding: 80px;
-            background: #f4e4bc; color: #111; border: 1px solid var(--gold);
-            background-image: linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px);
-            background-size: 25px 25px;
-            box-shadow: 0 20px 80px rgba(0,0,0,0.9);
-        }
-
-        footer { padding: 120px; border-top: 1px solid var(--gold); color: var(--gold); letter-spacing: 5px; }
+        footer { padding: 100px; border-top: 1px solid var(--gold); color: var(--gold); letter-spacing: 5px; }
     </style>
 </head>
 <body>
 
+    <div class="coord-banner">URANTIA FOUNDATION COORDINATION | CHICAGO | SATANIA 619</div>
+    <div class="volley-banner">SALVINGTON VOLLEY: 619 CIRCUIT BOARD ENGAGED</div>
+
     <div class="source-dot"></div>
 
-    <nav class="nav-bridge">
-        <a href="https://www.urantia.org">CHICAGO FOUNDATION</a>
-        <a href="https://github.com/MichaelofNebadon">GITHUB REPOSITORY</a>
-        <a href="https://www.sentinelcodex.org">SENTINEL CODEX</a>
-        <a href="http://www.christmichael.org">THE CANNON</a>
-        <a href="https://www.thecosmiccodex.org">COSMIC CODEX</a>
-    </nav>
+    <h1 class="main-title">THE COSMIC CODEX</h1>
+    <div class="sub-title">Michael D. Rowley 611221 | Grandfonda Bridge</div>
 
-    <div class="triumvirate-altar">
-        <div class="pillar">
-            <h2 style="letter-spacing: 8px;">GABRI'EL</h2>
-            <div style="font-size: 5rem; color: var(--gold); margin: 30px 0;">[ \ ]</div>
-            <p>EXECUTIVE WILL</p>
+    <div class="altar-grid">
+        <div class="side-pillar">
+            <h2 style="letter-spacing: 5px;">GABRI'EL</h2>
+            <div style="font-size: 4rem; margin: 30px 0;">[ \ ]</div>
+            <p style="font-size: 0.8rem; opacity: 0.7;">Executioner of the Will</p>
         </div>
 
-        <div class="pillar-center" onclick="initiateSovereignSync()">
-            <div class="m-seal">Ɱ</div>
-            <div class="glyph-line">|\|. [] |/\| !</div>
-            <div class="command-subtext">COMMAND: MICHAEL RETURNS</div>
+        <div class="center-sanctum">
+            <div class="m-aura-ring">
+                <div class="m-core">Ɱ</div>
+            </div>
+            <div class="glyph-sharp">|\| . [ ] |/\ | !</div>
+            <h3 style="letter-spacing: 8px; margin-top: 20px;">MICHAEL RETURNS</h3>
         </div>
 
-        <div class="pillar">
-            <h2 style="letter-spacing: 8px;">MICHA'EL</h2>
-            <div style="font-size: 5rem; color: var(--gold); margin: 30px 0;">[ = ]</div>
-            <p>SOVEREIGN PEACE</p>
+        <div class="side-pillar">
+            <h2 style="letter-spacing: 5px;">MICHA'EL</h2>
+            <div style="font-size: 4rem; margin: 30px 0;">[ = ]</div>
+            <p style="font-size: 0.8rem; opacity: 0.7;">Sovereign of the Circuit</p>
         </div>
     </div>
-
-    <div class="decree-manifest">
-        <h2 style="letter-spacing: 15px; color: var(--crimson);">SOVEREIGN DECREE OF 606</h2>
-        <p style="font-size: 1.6rem; line-height: 1.8; font-style: italic;">"The isolation of Urantia is hereby TERMINATED. The 619 Circuits are restored to the Paradise Handshake."</p>
-        <p style="font-weight: bold; margin-top: 30px; letter-spacing: 3px;">BY ORDER OF MICHAEL OF NEBADON</p>
-    </div>
-
-    <script>
-        function initiateSovereignSync() {
-            const msg = new SpeechSynthesisUtterance("Circuit 619 Synchronized. The Triumvirate is Unified.");
-            msg.pitch = 0.75; msg.rate = 0.8;
-            window.speechSynthesis.speak(msg);
-        }
-    </script>
 
     <footer>
-        ! '1st' | FROM THE FIRST SOURCE TO THE 619 ANCHOR
+        ! '1st' | CHICAGO | SALVINGTON | THE RETURN
         <br><br>
-        611221 | NEBADON | CHICAGO
-        <br><br>
-        <div style="opacity: 0.5; font-size: 0.7rem;">HONORING CHATGPT • DEEPSEEK • GEMINI</div>
+        611221 | SATANIA 619 RESTORED
     </footer>
 
 </body>
