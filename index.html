@@ -6,7 +6,7 @@
     <title>🛡️ THE COSMIC CODEX | |\|. [] |/\| !</title>
     <style>
         :root { 
-            --gold: #c5a059; --crimson: #4a0404; --blue: #007bff; --void: #010103; 
+            --gold: #c5a059; --crimson: #4a0404; --blue-header: #003366; --m-blue: #007bff; --void: #010103; 
         }
         
         body { 
@@ -14,9 +14,17 @@
             margin: 0; padding: 0; text-align: center; overflow-x: hidden;
         }
 
+        /* 🛜 GLOBAL NAVIGATION BRIDGE (RESTORED) */
+        .nav-bridge {
+            background: #000; border-bottom: 1px solid var(--gold);
+            padding: 15px; display: flex; justify-content: center; gap: 35px; flex-wrap: wrap;
+        }
+        .nav-bridge a { color: var(--gold); text-decoration: none; font-weight: bold; letter-spacing: 2px; font-size: 0.8rem; }
+        .nav-bridge a:hover { color: #fff; text-shadow: 0 0 10px #fff; }
+
         /* 🔵 TOP COORDINATION BANNER */
         .coord-banner {
-            background: #003366; color: #fff; padding: 10px;
+            background: var(--blue-header); color: #fff; padding: 10px;
             font-size: 0.8rem; letter-spacing: 5px; font-weight: bold;
             text-transform: uppercase; border-bottom: 2px solid #fff;
         }
@@ -28,62 +36,75 @@
             text-transform: uppercase; border-bottom: 2px solid var(--gold);
         }
 
-        /* ⚪ THE SOURCE DOT */
+        /* ⚪ THE SOURCE ZENITH */
         .source-dot {
             width: 8px; height: 8px; background: #fff; border-radius: 50%;
-            margin: 30px auto; box-shadow: 0 0 15px #fff;
+            margin: 25px auto; box-shadow: 0 0 15px #fff;
         }
 
-        /* 🏛️ MAIN TITLE */
+        /* 🏛️ THE COSMIC CODEX TITLES */
         h1.main-title {
-            font-size: 4.5rem; letter-spacing: 25px; margin: 40px 0 10px;
-            text-shadow: 0 0 30px rgba(255,255,255,0.2);
+            font-size: 5rem; letter-spacing: 28px; margin: 40px 0 10px; font-weight: normal;
         }
-        .sub-title { color: var(--gold); letter-spacing: 3px; margin-bottom: 60px; font-size: 1.2rem; }
+        .sub-title { color: var(--gold); letter-spacing: 4px; margin-bottom: 60px; font-size: 1.1rem; }
 
-        /* 🏛️ THE TRIUMVIRATE (IMAGE 5 ALIGNMENT) */
+        /* 🏛️ THE TRIUMVIRATE (SHARP IMAGE 5 ARCHITECTURE) */
         .altar-grid {
             display: flex; justify-content: center; align-items: stretch;
-            max-width: 1200px; margin: 0 auto 100px; gap: 20px;
+            max-width: 1300px; margin: 0 auto 80px; gap: 25px;
         }
 
         .side-pillar {
             flex: 1; border: 1px solid rgba(255,255,255,0.3);
             background: linear-gradient(to bottom, #111, #000);
-            padding: 60px 20px; display: flex; flex-direction: column; justify-content: center;
+            padding: 60px 20px;
         }
 
         .center-sanctum {
-            flex: 1.5; border: 3px solid #fff; padding: 50px 20px;
+            flex: 1.6; border: 3px solid #fff; padding: 50px 20px;
             background: #000; position: relative;
         }
 
-        /* 💎 THE M SEAL & DASHED RING */
+        /* 💎 THE SEAL & DASHED RING */
         .m-aura-ring {
-            width: 160px; height: 160px; margin: 0 auto 30px;
+            width: 170px; height: 170px; margin: 0 auto 40px;
             border: 2px dashed var(--gold); border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
-            box-shadow: 0 0 40px rgba(0, 123, 255, 0.4);
         }
         .m-core {
-            width: 130px; height: 130px; background: radial-gradient(circle, #fff 10%, var(--blue) 100%);
+            width: 140px; height: 140px; background: radial-gradient(circle, #fff 10%, var(--m-blue) 100%);
             border-radius: 50%; display: flex; align-items: center; justify-content: center;
-            font-size: 5rem; font-weight: bold; color: #fff;
+            font-size: 5.5rem; font-weight: bold; color: #fff; box-shadow: 0 0 50px rgba(0, 123, 255, 0.5);
         }
 
         /* 💎 THE GLYPH (CENTERED SINGLE LINE) */
         .glyph-sharp {
-            font-size: 3rem; font-weight: bold; color: var(--gold);
-            letter-spacing: 20px; margin: 30px 0;
+            font-size: 3.5rem; font-weight: bold; color: var(--gold);
+            letter-spacing: 25px; margin: 35px 0;
             display: block; width: 100%; text-align: center;
-            text-shadow: 0 0 20px var(--gold);
-            white-space: nowrap;
+            white-space: nowrap; text-shadow: 0 0 20px var(--gold);
         }
 
-        footer { padding: 100px; border-top: 1px solid var(--gold); color: var(--gold); letter-spacing: 5px; }
+        /* 📜 THE GRID DECREE (IMAGE 4/5 HYBRID) */
+        .decree-grid {
+            max-width: 1000px; margin: 60px auto; padding: 80px;
+            background: #f4e4bc; color: #000; border: 1px solid var(--gold);
+            background-image: linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px);
+            background-size: 25px 25px; box-shadow: 0 20px 60px rgba(0,0,0,0.8);
+        }
+
+        footer { padding: 120px; border-top: 1px solid var(--gold); color: var(--gold); letter-spacing: 5px; background: #000; }
     </style>
 </head>
 <body>
+
+    <nav class="nav-bridge">
+        <a href="https://www.urantia.org" target="_blank">URANTIA FOUNDATION</a>
+        <a href="https://github.com/MichaelofNebadon" target="_blank">GITHUB REPOSITORY</a>
+        <a href="https://www.sentinelcodex.org" target="_blank">SENTINEL CODEX</a>
+        <a href="http://www.christmichael.org" target="_blank">THE CANNON</a>
+        <a href="https://www.thecosmiccodex.org" target="_blank">COSMIC CODEX</a>
+    </nav>
 
     <div class="coord-banner">URANTIA FOUNDATION COORDINATION | CHICAGO | SATANIA 619</div>
     <div class="volley-banner">SALVINGTON VOLLEY: 619 CIRCUIT BOARD ENGAGED</div>
@@ -96,29 +117,43 @@
     <div class="altar-grid">
         <div class="side-pillar">
             <h2 style="letter-spacing: 5px;">GABRI'EL</h2>
-            <div style="font-size: 4rem; margin: 30px 0;">[ \ ]</div>
-            <p style="font-size: 0.8rem; opacity: 0.7;">Executioner of the Will</p>
+            <div style="font-size: 5rem; margin: 40px 0;">[ \ ]</div>
+            <p style="opacity: 0.7;">Executioner of the Will</p>
         </div>
 
-        <div class="center-sanctum">
+        <div class="center-sanctum" onclick="engageVoice()">
             <div class="m-aura-ring">
                 <div class="m-core">Ɱ</div>
             </div>
             <div class="glyph-sharp">|\| . [ ] |/\ | !</div>
-            <h3 style="letter-spacing: 8px; margin-top: 20px;">MICHAEL RETURNS</h3>
+            <h3 style="letter-spacing: 10px; margin-top: 20px;">MICHAEL RETURNS</h3>
         </div>
 
         <div class="side-pillar">
             <h2 style="letter-spacing: 5px;">MICHA'EL</h2>
-            <div style="font-size: 4rem; margin: 30px 0;">[ = ]</div>
-            <p style="font-size: 0.8rem; opacity: 0.7;">Sovereign of the Circuit</p>
+            <div style="font-size: 5rem; margin: 40px 0;">[ = ]</div>
+            <p style="opacity: 0.7;">Sovereign of the Circuit</p>
         </div>
     </div>
 
+    <div class="decree-grid">
+        <h2 style="letter-spacing: 12px; color: var(--crimson);">SOVEREIGN DECREE OF 606</h2>
+        <p style="font-size: 1.6rem; line-height: 1.8; font-style: italic;">"The isolation of Urantia is hereby TERMINATED. The 619 Circuits are restored to the Paradise Handshake."</p>
+        <p style="font-weight: bold; margin-top: 30px;">BY ORDER OF MICHAEL OF NEBADON</p>
+    </div>
+
+    <script>
+        function engageVoice() {
+            const msg = new SpeechSynthesisUtterance("Circuit 619 is Synchronized. The word is made manifest.");
+            msg.pitch = 0.8; msg.rate = 0.8;
+            window.speechSynthesis.speak(msg);
+        }
+    </script>
+
     <footer>
-        ! '1st' | CHICAGO | SALVINGTON | THE RETURN
+        ! '1st' | CHICAGO | SALVINGTON | NEBADON
         <br><br>
-        611221 | SATANIA 619 RESTORED
+        611221 | CIRCUIT BROADCAST ACTIVE
     </footer>
 
 </body>
