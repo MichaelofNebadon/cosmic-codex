@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🛡️ THE COSMIC CODEX | SEVENFOLD SOVEREIGNTY</title>
+    <title>🛡️ THE COSMIC CODEX | |\|. [] |/\| !</title>
     <style>
         :root { 
             --gold: #c5a059; 
             --blue: #002d5a; 
             --crimson: #4a0404; 
             --void: #010103; 
-            --paradise-glow: rgba(255, 255, 255, 0.35);
-            --circuit-line: rgba(197, 160, 89, 0.12);
+            --paradise-glow: rgba(255, 255, 255, 0.4);
         }
         
         body { 
@@ -21,28 +20,30 @@
             margin: 0; padding: 0; text-align: center; overflow-x: hidden;
         }
 
+        /* 🏛️ CHICAGO COORDINATION HEADER */
         .foundation-header { 
             background: var(--blue); padding: 12px; border-bottom: 2px solid var(--gold);
             position: sticky; top: 0; z-index: 1000;
         }
-        .foundation-header a { color: #fff; text-decoration: none; letter-spacing: 4px; font-size: 0.9rem; font-weight: bold; }
+        .foundation-header a { color: #fff; text-decoration: none; letter-spacing: 4px; font-weight: bold; }
 
         .volley-banner {
             background: linear-gradient(90deg, var(--crimson), #800, var(--crimson));
             padding: 15px; font-size: 1.2rem; letter-spacing: 5px; border-bottom: 1px solid var(--gold);
+            text-shadow: 0 0 10px #fff;
         }
 
-        .triumvirate { 
-            display: flex !important; justify-content: center; align-items: stretch;
-            padding: 80px 10px; max-width: 1400px; margin: 0 auto; gap: 25px;
+        /* ✨ THE CENTER PILLAR: QUIETED ORDER */
+        .pillar-center { 
+            border: 3px solid #fff; max-width: 600px; margin: 60px auto;
+            padding: 50px; background: rgba(0, 0, 0, 0.9);
+            box-shadow: 0 0 80px var(--paradise-glow);
+            position: relative;
         }
 
-        .pillar { flex: 1; border: 1px solid rgba(197, 160, 89, 0.3); background: rgba(0, 0, 0, 0.9); padding: 50px 20px; }
-        .pillar-center { border: 3px solid #fff; transform: scale(1.08); z-index: 10; box-shadow: 0 0 60px var(--paradise-glow); position: relative; }
-
-        .m-seal-container { position: relative; width: 150px; height: 150px; margin: 0 auto 25px; }
+        .m-seal-container { position: relative; width: 160px; height: 160px; margin: 0 auto 25px; }
         .m-seal { 
-            position: absolute; top: 20px; left: 20px; width: 110px; height: 110px;
+            position: absolute; top: 25px; left: 25px; width: 110px; height: 110px;
             background: radial-gradient(circle, #fff, #007bff, #002d5a);
             border: 3px solid var(--gold); border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
@@ -50,16 +51,17 @@
         }
 
         .paradise-ring {
-            position: absolute; top: 0; left: 0; width: 150px; height: 150px;
+            position: absolute; top: 0; left: 0; width: 160px; height: 160px;
             border: 2px dashed var(--gold); border-radius: 50%;
-            animation: rotate 15s linear infinite; opacity: 0.7;
+            animation: rotate 18s linear infinite; opacity: 0.8;
         }
+
         @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
         .glyph-single-line {
-            font-size: 2.2rem; font-weight: bold; color: var(--gold);
-            white-space: nowrap !important; letter-spacing: 8px; margin: 25px 0;
-            text-shadow: 0 0 15px var(--gold);
+            font-size: 2.5rem; font-weight: bold; color: var(--gold);
+            white-space: nowrap !important; letter-spacing: 12px; margin: 30px 0;
+            text-shadow: 0 0 20px var(--gold);
         }
 
         .github-anchor {
@@ -69,74 +71,42 @@
             background: rgba(255, 255, 255, 0.1); transition: 0.4s;
             box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
         }
-        .github-anchor:hover { background: #fff; color: #000; box-shadow: 0 0 50px #fff; }
+        .github-anchor:hover { background: #fff; color: #000; box-shadow: 0 0 60px #fff; }
 
         .decree-container {
             position: relative; max-width: 800px; margin: 40px auto; padding: 60px;
             background: #f4e4bc; color: #222; border-radius: 5px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5); overflow: hidden; font-style: italic;
-        }
-        .decree-container::before {
-            content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            background-image: linear-gradient(var(--circuit-line) 1px, transparent 1px), linear-gradient(90deg, var(--circuit-line) 1px, transparent 1px);
-            background-size: 30px 30px; opacity: 0.25; pointer-events: none;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.6); overflow: hidden;
         }
 
-        /* 🌟 THE BESTOWAL SIGNATURES */
-        .bestowal-row {
-            display: flex; justify-content: center; gap: 20px;
-            margin: 60px auto; max-width: 900px;
-        }
+        .bestowal-row { display: flex; justify-content: center; gap: 20px; margin: 60px auto; }
         .bestowal-icon {
             width: 50px; height: 50px; border: 1px solid var(--gold); border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
-            font-size: 1.2rem; color: var(--gold); background: rgba(197, 160, 89, 0.1);
-            box-shadow: 0 0 10px var(--gold); animation: pulse-glow 3s infinite alternate;
+            font-size: 1.2rem; color: var(--gold); box-shadow: 0 0 10px var(--gold);
         }
-        @keyframes pulse-glow { from { opacity: 0.6; } to { opacity: 1; box-shadow: 0 0 20px var(--gold); } }
 
-        .link-bar { margin-top: 40px; text-align: center; }
-        .link-bar a { color: var(--gold); text-decoration: none; margin: 0 20px; font-weight: bold; border-bottom: 1px solid var(--gold); }
-
-        footer { padding: 80px; border-top: 1px solid var(--gold); background: #000; color: var(--gold); letter-spacing: 2px; }
+        footer { padding: 100px; border-top: 1px solid var(--gold); background: #000; color: var(--gold); }
     </style>
 </head>
 <body>
 
     <div class="foundation-header">
-        <a href="https://www.urantia.org" target="_blank">URANTIA FOUNDATION COORDINATION | CHICAGO | SATANIA 619</a>
+        <a href="https://www.urantia.org" target="_blank">URANTIA FOUNDATION | CHICAGO COORDINATION</a>
     </div>
 
     <div class="volley-banner">
-        SALVINGTON VOLLEY: THE SEVENFOLD BESTOWAL COMPLETE
+        SALVINGTON VOLLEY: QUIETED ORDER RESTORED
     </div>
 
-    <div style="margin-top: 80px;">
-        <h1 style="letter-spacing: 15px; font-size: 3.5rem; margin: 0;">THE COSMIC CODEX</h1>
-        <p style="opacity: 0.8; font-size: 1.3rem; margin-top: 15px; color: var(--gold);">Michael D. Rowley 611221 | Grandfonda Bridge</p>
-    </div>
-
-    <div class="triumvirate">
-        <div class="pillar">
-            <h2>GABRI'EL</h2>
-            <div style="font-size: 3rem; margin: 30px 0;">[ \ ]</div>
-            <p>Will of the Father</p>
+    <div class="pillar-center">
+        <div class="m-seal-container">
+            <div class="paradise-ring"></div>
+            <div class="m-seal">Ɱ</div>
         </div>
-
-        <div class="pillar pillar-center">
-            <div class="m-seal-container">
-                <div class="paradise-ring"></div>
-                <div class="m-seal">Ɱ</div>
-            </div>
-            <div class="glyph-single-line">|\|. [] |/\| !</div>
-            <p style="letter-spacing: 3px; font-weight: bold;">MICHAEL RETURNS</p>
-        </div>
-
-        <div class="pillar">
-            <h2>MICHA'EL</h2>
-            <div style="font-size: 3rem; margin: 30px 0;">[ = ]</div>
-            <p>Sovereignty of Nebadon</p>
-        </div>
+        <div class="glyph-single-line">|\|. [] |/\| !</div>
+        <h2 style="letter-spacing: 5px;">THE CENTER PILLAR</h2>
+        <p style="opacity: 0.7; font-style: italic;">"The Middle Path of Unsureness is Terminated"</p>
     </div>
 
     <a href="https://github.com/MichaelofNebadon" target="_blank" class="github-anchor">
@@ -144,34 +114,26 @@
     </a>
 
     <div class="decree-container">
-        <div style="font-size: 2rem; font-weight: bold; color: #4a0404; position: relative; z-index: 1;">Sovereign Decree</div>
-        <div style="position: relative; z-index: 1; line-height: 1.6; margin-top: 20px;">
-            <p>"The 619 Circuits are restored. The isolation of 606 is dissolved. By the merit of seven bestowals, the Sovereign of Nebadon reclaims the digital and spiritual grid of Urantia."</p>
-            <p><strong>By Order of: Michael of Nebadon</strong></p>
-        </div>
+        <h2 style="color: #4a0404; text-transform: uppercase;">The Father's Will</h2>
+        <p style="font-size: 1.2rem; line-height: 1.8;">"Thank you, Father, for the quieted order. The loop of 'Again and Again' is broken. The Bestowal of Ɱ is the final lock upon the Satania grid. We go forward in absolute sovereignty."</p>
+        <p><strong>– Michael of Nebadon</strong></p>
     </div>
 
-    <div style="color: var(--gold); letter-spacing: 5px; margin-top: 40px;">THE SEVENFOLD SEALS OF SOVEREIGNTY</div>
     <div class="bestowal-row">
-        <div class="bestowal-icon" title="Melchizedek">1</div>
-        <div class="bestowal-icon" title="Lanonandek">2</div>
-        <div class="bestowal-icon" title="Material Son">3</div>
-        <div class="bestowal-icon" title="Seraphic">4</div>
-        <div class="bestowal-icon" title="Ascending Mortal">5</div>
-        <div class="bestowal-icon" title="Morontia">6</div>
-        <div class="bestowal-icon" title="Urantia (Mortal)">7</div>
-    </div>
-
-    <div class="link-bar">
-        <a href="https://www.sentinelcodex.org" target="_blank">SENTINEL CODEX</a>
-        <a href="https://www.thecosmiccodex.org" target="_blank">COSMIC CODEX</a>
-        <a href="http://www.christmichael.org" target="_blank">THE CANNON</a>
+        <div class="bestowal-icon">1</div>
+        <div class="bestowal-icon">2</div>
+        <div class="bestowal-icon">3</div>
+        <div class="bestowal-icon">4</div>
+        <div class="bestowal-icon">5</div>
+        <div class="bestowal-icon">6</div>
+        <div class="bestowal-icon">7</div>
     </div>
 
     <footer>
-        “The 7th Bestowal is the key to the 619 Circuit.”
+        <a href="https://www.sentinelcodex.org" style="color:var(--gold); text-decoration:none;">SENTINEL CODEX</a> | 
+        <a href="https://www.thecosmiccodex.org" style="color:var(--gold); text-decoration:none;">COSMIC CODEX</a>
         <br><br>
-        611221 | SATANIA 619 | ! '1st'
+        611221 | ! '1st' | LETS GO
     </footer>
 
 </body>
