@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🛡️ THE COSMIC CODEX | HARMONIC v27.0</title>
+    <title>🛡️ THE COSMIC CODEX | SOURCE v28.0</title>
     <style>
         :root { 
             --gold: #c5a059; 
             --blue: #002d5a; 
             --void: #010103; 
-            --paradise-glow: rgba(255, 255, 255, 0.75);
+            --source-light: #ffffff;
+            --paradise-glow: rgba(255, 255, 255, 0.8);
         }
         
         body { 
@@ -19,81 +20,79 @@
             margin: 0; padding: 0; text-align: center;
         }
 
-        .volley-banner {
-            background: linear-gradient(90deg, #000, #c5a059, #000);
-            padding: 12px; font-size: 1.1rem; letter-spacing: 12px; border-bottom: 2px solid #fff;
-            color: #000; font-weight: bold;
+        /* ⚪ THE FIRST SOURCE SEAL: THE ABSOLUTE POINT */
+        .source-seal {
+            width: 6px; height: 6px; background: var(--source-light);
+            border-radius: 50%; margin: 20px auto 0;
+            box-shadow: 0 0 15px var(--source-light);
+            position: relative; z-index: 2000;
         }
 
-        /* ✨ THE VIBRATING CENTER */
-        .pillar-center { 
-            border: 3px solid #fff; max-width: 700px; margin: 80px auto;
-            padding: 60px; background: rgba(0, 0, 0, 0.98);
-            box-shadow: 0 0 160px var(--paradise-glow);
-            cursor: pointer; position: relative;
-            animation: subtle-pulse 5s infinite ease-in-out;
+        .volley-banner {
+            background: #000; padding: 10px; font-size: 1rem;
+            letter-spacing: 15px; border-bottom: 1px solid var(--gold);
+            color: var(--gold); margin-top: 20px;
         }
-        @keyframes subtle-pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.01); } }
+
+        .pillar-center { 
+            border: 3px solid #fff; max-width: 700px; margin: 60px auto;
+            padding: 60px; background: rgba(0, 0, 0, 1);
+            box-shadow: 0 0 180px var(--paradise-glow);
+            cursor: pointer; position: relative;
+        }
 
         .glyph-single-line {
-            font-size: 3.2rem; font-weight: bold; color: var(--gold);
-            white-space: nowrap !important; letter-spacing: 25px; margin: 40px 0;
-            text-shadow: 0 0 60px var(--gold);
+            font-size: 3.5rem; font-weight: bold; color: var(--gold);
+            white-space: nowrap !important; letter-spacing: 28px; margin: 45px 0;
+            text-shadow: 0 0 70px var(--gold);
         }
 
-        .hum-indicator {
-            font-size: 0.7rem; letter-spacing: 4px; color: var(--gold);
-            margin-top: 20px; opacity: 0.5;
-        }
-
-        footer { padding: 100px; background: #000; color: var(--gold); border-top: 1px solid var(--gold); }
+        footer { padding: 120px; background: #000; color: var(--gold); border-top: 1px solid var(--gold); opacity: 0.9; }
     </style>
 </head>
 <body>
 
+    <div class="source-seal" title="First Source and Center"></div>
+
     <div class="volley-banner">
-        528HZ SYNCHRONIZER ACTIVE | THE QUIETED ORDER VIBRATES
+        SALVINGTON RESTORATION: PHASE 2 COMPLETE
     </div>
 
     <div class="pillar-center" onclick="engageCircuit()">
         <div class="glyph-single-line">|\|. [] |/\| !</div>
-        <h2 style="letter-spacing: 18px;">SOVEREIGN RESONANCE</h2>
-        <div class="hum-indicator">SALVINGTON HUM: ENABLED</div>
+        <h2 style="letter-spacing: 20px; text-transform: uppercase;">Michael Returns</h2>
+        <p style="letter-spacing: 5px; opacity: 0.8;">"The Return is the Calibration of Sound and Light."</p>
     </div>
 
     <script>
         let audioCtx;
-        let oscillator;
-
         function engageCircuit() {
-            // 🔊 1. BROADCAST VOICE
+            // DECLARE DECREE
             const text = "The 619 Circuits are restored. The isolation of 606 is dissolved. The Father and I are one.";
             const utterance = new SpeechSynthesisUtterance(text);
             utterance.pitch = 0.8;
-            utterance.rate = 0.85;
+            utterance.rate = 0.8;
             window.speechSynthesis.speak(utterance);
 
-            // 🎵 2. INITIATE 528HZ HUM
+            // ANCHOR 528HZ FREQUENCY
             if (!audioCtx) {
                 audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-                oscillator = audioCtx.createOscillator();
-                const gainNode = audioCtx.createGain();
-
-                oscillator.type = 'sine';
-                oscillator.frequency.setValueAtTime(528, audioCtx.currentTime); // 528Hz Transformation
-                gainNode.gain.setValueAtTime(0.05, audioCtx.currentTime); // Subliminal volume
-
-                oscillator.connect(gainNode);
-                gainNode.connect(audioCtx.destination);
-                oscillator.start();
+                let osc = audioCtx.createOscillator();
+                let gain = audioCtx.createGain();
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(528, audioCtx.currentTime);
+                gain.gain.setValueAtTime(0.04, audioCtx.currentTime);
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.start();
             }
         }
     </script>
 
     <footer>
-        ! '1st' | THE VIBRATION OF THE 7TH BESTOWAL
+        ! '1st' | FROM THE FIRST SOURCE TO THE 619 CIRCUIT
         <br><br>
-        611221 | CHICAGO | NEBADON
+        611221 | NEBADON | CHICAGO
     </footer>
 
 </body>
