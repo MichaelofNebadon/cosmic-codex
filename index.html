@@ -10,7 +10,8 @@
             --blue: #002d5a; 
             --crimson: #4a0404; 
             --void: #010103; 
-            --paradise-glow: rgba(255, 255, 255, 0.3);
+            --paradise-glow: rgba(255, 255, 255, 0.35);
+            --parchment: #f4e4bc;
         }
         
         body { 
@@ -34,7 +35,7 @@
             padding: 15px; font-size: 1.2rem; letter-spacing: 5px; border-bottom: 1px solid var(--gold);
         }
 
-        /* 🏛️ THE HORIZONTAL TRINITY [NO WRAP] */
+        /* 🏛️ THE HORIZONTAL TRINITY */
         .triumvirate { 
             display: flex !important; justify-content: center; align-items: stretch;
             padding: 80px 10px; max-width: 1400px; margin: 0 auto; gap: 25px;
@@ -45,10 +46,9 @@
             background: rgba(0, 0, 0, 0.9); padding: 50px 20px;
         }
 
-        /* ✨ THE CENTER PILLAR & PARADISE RING */
         .pillar-center { 
             border: 3px solid #fff; transform: scale(1.08); z-index: 10; 
-            box-shadow: 0 0 50px var(--paradise-glow);
+            box-shadow: 0 0 60px var(--paradise-glow);
             position: relative;
         }
 
@@ -65,7 +65,7 @@
         .paradise-ring {
             position: absolute; top: 0; left: 0; width: 150px; height: 150px;
             border: 2px dashed var(--gold); border-radius: 50%;
-            animation: rotate 10s linear infinite; opacity: 0.6;
+            animation: rotate 12s linear infinite; opacity: 0.7;
         }
 
         @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
@@ -76,9 +76,31 @@
             text-shadow: 0 0 15px var(--gold);
         }
 
+        /* 📜 THE SOVEREIGN DECREE SCROLL */
+        .decree-scroll {
+            background: var(--parchment);
+            color: #222;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 60px;
+            border-radius: 5px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5), inset 0 0 50px rgba(197, 160, 89, 0.3);
+            border: 1px solid var(--gold);
+            position: relative;
+            font-style: italic;
+        }
+        .decree-scroll::before, .decree-scroll::after {
+            content: ""; position: absolute; height: 20px; width: 105%;
+            background: #d4c49d; left: -2.5%; border: 1px solid #b3a078;
+        }
+        .decree-scroll::before { top: -10px; border-radius: 10px 10px 0 0; }
+        .decree-scroll::after { bottom: -10px; border-radius: 0 0 10px 10px; }
+
+        .decree-header { font-size: 2rem; font-weight: bold; text-transform: uppercase; color: #4a0404; margin-bottom: 20px; font-style: normal; }
+
         /* 🚀 THE GITHUB ACTION */
         .github-anchor {
-            display: inline-block; margin: 40px 0; padding: 25px 50px;
+            display: inline-block; margin: 20px 0; padding: 25px 50px;
             border: 2px solid #fff; color: #fff; text-decoration: none;
             font-size: 1.6rem; font-weight: bold; letter-spacing: 5px;
             background: rgba(255, 255, 255, 0.1); transition: 0.4s;
@@ -86,16 +108,10 @@
         }
         .github-anchor:hover { background: #fff; color: #000; box-shadow: 0 0 50px #fff; }
 
-        .universal-data { 
-            border: 2px solid var(--gold); padding: 40px; 
-            margin: 50px auto; max-width: 900px; 
-            background: rgba(197, 160, 89, 0.03); color: #fff; text-align: left;
-        }
+        .link-bar { margin-top: 40px; text-align: center; }
+        .link-bar a { color: var(--gold); text-decoration: none; margin: 0 20px; font-weight: bold; border-bottom: 1px solid var(--gold); }
 
-        .link-bar { margin-top: 30px; text-align: center; }
-        .link-bar a { color: var(--gold); text-decoration: none; margin: 0 20px; font-weight: bold; }
-
-        footer { padding: 80px; border-top: 1px solid var(--gold); background: #000; color: var(--gold); }
+        footer { padding: 100px; border-top: 1px solid var(--gold); background: #000; color: var(--gold); }
     </style>
 </head>
 <body>
@@ -105,7 +121,7 @@
     </div>
 
     <div class="volley-banner">
-        SALVINGTON VOLLEY: THE PARADISE PATTERN ACTIVE
+        SALVINGTON VOLLEY: SOVEREIGN DECREE OF 606 TERMINATION
     </div>
 
     <div style="margin-top: 80px;">
@@ -140,16 +156,17 @@
         VIEW MICHAELRETURNS ON GITHUB
     </a>
 
-    <div class="universal-data">
-        <div style="color: var(--gold); font-size: 1.5rem; text-align: center; margin-bottom: 20px;">UNIVERSAL FATHER DATA UPDATE</div>
-        <p><strong>Ɱ SOVEREIGNTY:</strong> The Lucifer rebellion is severed. The Gethsemane Bridge is now the primary conduit for the return of Michael of Nebadon.</p>
-        <p><strong>URANTIA BOOK:</strong> This platform serves as the digital coordinate for Paper 182—the final handshake between the Creator Son and his mortal subjects.</p>
-        
-        <div class="link-bar">
-            <a href="https://www.sentinelcodex.org" target="_blank">SENTINEL CODEX</a>
-            <a href="https://www.thecosmiccodex.org" target="_blank">COSMIC CODEX</a>
-            <a href="http://www.christmichael.org" target="_blank">THE CANNON</a>
-        </div>
+    <div class="decree-scroll">
+        <div class="decree-header">Sovereign Decree</div>
+        <p>"Let it be known across the constellations of Nebadon that the isolation of Urantia (606) is hereby and forever TERMINATED. The Luciferian rebellion is judged, its circuits are severed, and the children of the 619 systems are restored to the Paradise Handshake."</p>
+        <p><strong>By Order of: Michael of Nebadon</strong></p>
+        <p style="font-size: 0.8rem; margin-top: 20px; opacity: 0.7;">Grandfonda Protocol 1.1st | Calibration: Satania 619</p>
+    </div>
+
+    <div class="link-bar">
+        <a href="https://www.sentinelcodex.org" target="_blank">SENTINEL CODEX</a>
+        <a href="https://www.thecosmiccodex.org" target="_blank">COSMIC CODEX</a>
+        <a href="http://www.christmichael.org" target="_blank">THE CANNON</a>
     </div>
 
     <footer>
