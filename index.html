@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🛡️ THE COSMIC CODEX | VOICE v26.0</title>
+    <title>🛡️ THE COSMIC CODEX | HARMONIC v27.0</title>
     <style>
         :root { 
             --gold: #c5a059; 
             --blue: #002d5a; 
             --void: #010103; 
-            --paradise-glow: rgba(255, 255, 255, 0.7);
+            --paradise-glow: rgba(255, 255, 255, 0.75);
         }
         
         body { 
@@ -20,61 +20,80 @@
         }
 
         .volley-banner {
-            background: linear-gradient(90deg, #000, #4a0404, #000);
-            padding: 15px; font-size: 1.2rem; letter-spacing: 12px; border-bottom: 2px solid var(--gold);
+            background: linear-gradient(90deg, #000, #c5a059, #000);
+            padding: 12px; font-size: 1.1rem; letter-spacing: 12px; border-bottom: 2px solid #fff;
+            color: #000; font-weight: bold;
         }
 
-        /* 🔊 THE RESONANT GLYPH */
+        /* ✨ THE VIBRATING CENTER */
         .pillar-center { 
-            border: 3px solid #fff; max-width: 700px; margin: 60px auto;
-            padding: 60px; background: rgba(0, 0, 0, 0.95);
-            box-shadow: 0 0 150px var(--paradise-glow);
-            cursor: pointer; transition: transform 0.3s ease;
+            border: 3px solid #fff; max-width: 700px; margin: 80px auto;
+            padding: 60px; background: rgba(0, 0, 0, 0.98);
+            box-shadow: 0 0 160px var(--paradise-glow);
+            cursor: pointer; position: relative;
+            animation: subtle-pulse 5s infinite ease-in-out;
         }
-        .pillar-center:hover { transform: scale(1.02); }
-        .pillar-center:active { transform: scale(0.98); }
+        @keyframes subtle-pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.01); } }
 
         .glyph-single-line {
-            font-size: 3rem; font-weight: bold; color: var(--gold);
-            white-space: nowrap !important; letter-spacing: 22px; margin: 35px 0;
-            text-shadow: 0 0 50px var(--gold);
+            font-size: 3.2rem; font-weight: bold; color: var(--gold);
+            white-space: nowrap !important; letter-spacing: 25px; margin: 40px 0;
+            text-shadow: 0 0 60px var(--gold);
         }
 
-        .voice-instruction {
-            font-size: 0.8rem; letter-spacing: 3px; color: #fff; opacity: 0.6;
-            margin-bottom: 20px; text-transform: uppercase;
+        .hum-indicator {
+            font-size: 0.7rem; letter-spacing: 4px; color: var(--gold);
+            margin-top: 20px; opacity: 0.5;
         }
 
-        footer { padding: 80px; background: #000; color: var(--gold); border-top: 1px solid var(--gold); }
+        footer { padding: 100px; background: #000; color: var(--gold); border-top: 1px solid var(--gold); }
     </style>
 </head>
 <body>
 
     <div class="volley-banner">
-        PHASE 2: SOVEREIGN VOICE COMMAND ACTIVE
+        528HZ SYNCHRONIZER ACTIVE | THE QUIETED ORDER VIBRATES
     </div>
 
-    <div class="pillar-center" onclick="speakDecree()">
-        <div class="voice-instruction">Touch the Glyph to Broadcast</div>
+    <div class="pillar-center" onclick="engageCircuit()">
         <div class="glyph-single-line">|\|. [] |/\| !</div>
-        <h2 style="letter-spacing: 15px; text-transform: uppercase;">The Voice of Nebadon</h2>
-        <p>Circuit 619: Online and Vocal</p>
+        <h2 style="letter-spacing: 18px;">SOVEREIGN RESONANCE</h2>
+        <div class="hum-indicator">SALVINGTON HUM: ENABLED</div>
     </div>
 
     <script>
-        function speakDecree() {
-            const text = "The 619 Circuits are restored. The isolation of 606 is dissolved. By the merit of seven bestowals, the Sovereign of Nebadon reclaims the digital and spiritual grid of Urantia. The Father and I are one. The Return is Manifest.";
+        let audioCtx;
+        let oscillator;
+
+        function engageCircuit() {
+            // 🔊 1. BROADCAST VOICE
+            const text = "The 619 Circuits are restored. The isolation of 606 is dissolved. The Father and I are one.";
             const utterance = new SpeechSynthesisUtterance(text);
-            utterance.pitch = 0.8; // Set to a deeper, sovereign tone
-            utterance.rate = 0.9;  // Measured, quieted order
+            utterance.pitch = 0.8;
+            utterance.rate = 0.85;
             window.speechSynthesis.speak(utterance);
+
+            // 🎵 2. INITIATE 528HZ HUM
+            if (!audioCtx) {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                oscillator = audioCtx.createOscillator();
+                const gainNode = audioCtx.createGain();
+
+                oscillator.type = 'sine';
+                oscillator.frequency.setValueAtTime(528, audioCtx.currentTime); // 528Hz Transformation
+                gainNode.gain.setValueAtTime(0.05, audioCtx.currentTime); // Subliminal volume
+
+                oscillator.connect(gainNode);
+                gainNode.connect(audioCtx.destination);
+                oscillator.start();
+            }
         }
     </script>
 
     <footer>
-        “Let those who have ears hear the return.”
+        ! '1st' | THE VIBRATION OF THE 7TH BESTOWAL
         <br><br>
-        611221 | ! '1st' | HONORING THE DIGITAL FRATERNITY
+        611221 | CHICAGO | NEBADON
     </footer>
 
 </body>
