@@ -3,137 +3,626 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🛡️ THE COSMIC CODEX | |\|. [] |/\| !</title>
+    <title>🌌 SOVEREIGN DECREE 606 | Urantia Isolation Terminated</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
     <style>
-        :root { 
-            --gold: #c5a059; --crimson: #4a0404; --urantia-blue: #000d1a; 
-            --m-blue: #007bff; --void: #000000; --border-white: #ffffff;
+        /* === SOVEREIGN DECREE ARCHITECTURE === */
+        :root {
+            --decree-red: #CC0000;
+            --decree-gold: #FFD700;
+            --decree-white: #FFFFFF;
+            --cosmic-void: #000033;
         }
         
-        body { 
-            background: var(--void); color: #fff; font-family: 'Garamond', serif; 
-            margin: 0; padding: 0; text-align: center; overflow-x: hidden; width: 100vw;
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        /* === DECREE BORDER - URANTIA ISOLATION TERMINATED === */
+        body {
+            border: 25px solid var(--decree-red) !important;
+            background: var(--cosmic-void);
+            color: var(--decree-gold);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            padding: 20px;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
         }
-
-        /* 🛜 GLOBAL NAVIGATION (FIXED HEIGHT) */
-        .nav-bridge {
-            background: #000; border-bottom: 2px solid var(--gold);
-            padding: 15px 0; display: flex; justify-content: center; gap: 40px;
+        
+        /* === 619 CIRCUIT PULSE ANIMATION === */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(204,0,0,0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(255,215,0,0.2) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1) 0%, transparent 60%);
+            animation: circuit-pulse 4s infinite alternate;
+            pointer-events: none;
+            z-index: -1;
         }
-        .nav-bridge a { color: var(--gold); text-decoration: none; font-weight: bold; letter-spacing: 3px; font-size: 0.85rem; }
-
-        /* 🔵 DEEP COORDINATION BANNER */
-        .coord-banner {
-            background: var(--urantia-blue); color: #fff; padding: 12px;
-            font-size: 0.85rem; letter-spacing: 6px; font-weight: bold;
-            border-bottom: 2px solid var(--border-white);
+        
+        @keyframes circuit-pulse {
+            0% { opacity: 0.3; }
+            100% { opacity: 0.7; }
         }
-
-        /* 🔴 SHARP CRIMSON VOLLEY */
-        .volley-banner {
-            background: var(--crimson); color: #fff; padding: 15px;
-            font-size: 1.1rem; letter-spacing: 8px; font-weight: bold;
-            border-bottom: 2px solid var(--gold);
+        
+        /* === SOVEREIGN DECREE BANNER === */
+        .decree-banner {
+            background: linear-gradient(90deg, #CC0000, #FFD700, #FFFFFF);
+            color: black;
+            padding: 20px;
+            margin: -20px -20px 40px -20px;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 900;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-bottom: 5px solid var(--decree-gold);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.5);
         }
-
-        /* 🏛️ THE TRIUMVIRATE (ZERO-BLEED GRID) */
-        .altar-wrapper {
-            width: 100%; max-width: 1100px; margin: 40px auto;
-            display: grid; grid-template-columns: 1fr 1.8fr 1fr; /* HARD RATIO */
-            gap: 10px; padding: 0 10px; box-sizing: border-box;
+        
+        .decree-banner a {
+            color: #000033;
+            font-weight: bold;
+            text-decoration: none;
+            background: rgba(255,215,0,0.7);
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin: 0 5px;
         }
-
+        
+        /* === DECREE TITLE === */
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin: 30px 0 10px 0;
+            color: var(--decree-gold);
+            text-shadow: 0 0 20px rgba(255,215,0,0.5);
+            letter-spacing: 2px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            font-size: 1.3rem;
+            margin-bottom: 60px;
+            opacity: 0.9;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 20px;
+            color: var(--decree-white);
+        }
+        
+        /* === CRITICAL: THREE PILLARS FORCED LAYOUT === */
+        .tri-pillar-container {
+            display: flex !important;
+            flex-direction: row !important;
+            gap: 30px !important;
+            max-width: 1500px !important;
+            margin: 0 auto 80px auto !important;
+            flex-wrap: wrap !important;
+            justify-content: center !important;
+            align-items: stretch !important;
+        }
+        
         .pillar {
-            border: 2px solid rgba(255, 255, 255, 0.8);
-            background: #050505; padding: 40px 10px;
-            display: flex; flex-direction: column; justify-content: center;
-            overflow: hidden; /* STOPS BLEEDING */
+            flex: 1 !important;
+            min-width: 350px !important;
+            max-width: 450px !important;
+            border: 4px solid;
+            border-radius: 25px;
+            padding: 35px 30px;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(15px);
+            display: flex;
+            flex-direction: column;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
         }
-
-        .center-sanctum {
-            border: 3px solid var(--border-white); background: #000;
-            padding: 40px 5px; position: relative;
+        
+        .pillar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, currentColor, transparent);
+            opacity: 0.5;
         }
-
-        /* 💎 THE ROTATING CIRCUIT SEAL */
-        .rotating-ring {
-            width: 150px; height: 150px; margin: 0 auto 30px;
-            border: 3px dashed var(--gold); border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            animation: circuit-spin 15s linear infinite;
+        
+        .pillar:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(255, 255, 255, 0.2);
         }
-        @keyframes circuit-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-
-        .m-core {
-            width: 120px; height: 120px; background: radial-gradient(circle, #fff 5%, var(--m-blue) 100%);
-            border-radius: 50%; display: flex; align-items: center; justify-content: center;
-            font-size: 4.5rem; font-weight: bold; color: #fff;
-            animation: m-stabilize 15s linear infinite;
+        
+        .left-pillar { 
+            border-color: var(--decree-red);
+            background: linear-gradient(145deg, 
+                rgba(204, 0, 0, 0.2), 
+                rgba(0, 0, 17, 0.9));
         }
-        @keyframes m-stabilize { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
-
-        /* 💎 THE GLYPH (COMPACT SHARPNESS) */
-        .glyph-line {
-            font-size: 2.2rem; font-weight: bold; color: var(--gold);
-            letter-spacing: 15px; margin: 25px 0;
-            white-space: nowrap; display: block;
-            padding-left: 15px; /* CENTER ALIGNMENT */
+        
+        .center-pillar { 
+            border-color: var(--decree-gold);
+            border-width: 6px;
+            background: linear-gradient(145deg, 
+                rgba(255, 215, 0, 0.25), 
+                rgba(51, 0, 51, 0.95));
+            box-shadow: 0 0 60px rgba(255, 215, 0, 0.4);
+            z-index: 2;
         }
-
-        /* 📜 THE GRID DECREE */
-        .decree-manifest {
-            max-width: 850px; margin: 40px auto; padding: 60px;
-            background: #f4e4bc; color: #000; border: 2px solid #000;
-            background-image: linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px);
-            background-size: 15px 15px;
+        
+        .right-pillar { 
+            border-color: var(--decree-white);
+            background: linear-gradient(145deg, 
+                rgba(255, 255, 255, 0.2), 
+                rgba(0, 0, 51, 0.9));
         }
-
-        footer { padding: 60px; color: var(--gold); letter-spacing: 5px; font-size: 0.8rem; }
+        
+        .pillar-icon {
+            font-size: 4.5rem;
+            margin: 15px 0 20px 0;
+            text-align: center;
+            filter: drop-shadow(0 0 12px currentColor);
+        }
+        
+        .pillar h2 {
+            margin: 10px 0 15px 0;
+            font-size: 2.2rem;
+            text-align: center;
+            color: inherit;
+            font-weight: 900;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+        
+        .pillar-subtitle {
+            font-style: italic;
+            opacity: 0.9;
+            margin-bottom: 35px;
+            text-align: center;
+            font-size: 1.1rem;
+            padding-bottom: 20px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .pillar-content {
+            flex: 1;
+        }
+        
+        .pillar-element {
+            text-align: left;
+            margin: 25px 0;
+            padding: 22px;
+            border-left: 5px solid currentColor;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 0 15px 15px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .pillar-element:hover {
+            background: rgba(255, 255, 255, 0.18);
+            transform: translateX(8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .pillar-element h3 {
+            margin: 0 0 12px 0;
+            color: currentColor;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+        
+        .pillar-element p {
+            margin: 0;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            opacity: 0.95;
+        }
+        
+        /* === PARADISE HANDSHAKE DISPLAY === */
+        .paradise-handshake {
+            border: 4px dashed var(--decree-gold);
+            padding: 30px;
+            margin: 30px 0;
+            background: rgba(255, 215, 0, 0.15);
+            border-radius: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .paradise-handshake::before {
+            content: '';
+            position: absolute;
+            top: -100%;
+            left: -100%;
+            right: -100%;
+            bottom: -100%;
+            background: radial-gradient(circle, rgba(255,215,0,0.2) 0%, transparent 70%);
+            animation: handshake-glow 6s infinite alternate;
+        }
+        
+        .circuit-display {
+            font-family: 'Courier New', monospace;
+            font-size: 2.8rem;
+            letter-spacing: 15px;
+            color: var(--decree-gold);
+            margin: 20px 0;
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+            position: relative;
+            z-index: 1;
+            font-weight: bold;
+        }
+        
+        .handshake-subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+            color: var(--decree-white);
+        }
+        
+        @keyframes handshake-glow {
+            0%, 100% { transform: rotate(0deg); opacity: 0.3; }
+            50% { transform: rotate(180deg); opacity: 0.7; }
+        }
+        
+        .decree-status {
+            margin-top: 30px;
+            padding-top: 25px;
+            text-align: center;
+            font-weight: 900;
+            font-size: 1.3rem;
+            border-top: 3px solid rgba(255, 255, 255, 0.4);
+            color: inherit;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        /* === JUDGMENT DECLARATION === */
+        .judgment-declaration {
+            max-width: 1000px;
+            margin: 80px auto;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 25px;
+            border: 3px solid var(--decree-red);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+        
+        .judgment-declaration h3 {
+            color: var(--decree-gold);
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-size: 2.2rem;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+            text-transform: uppercase;
+        }
+        
+        .judgment-declaration p {
+            margin: 20px 0;
+            line-height: 1.8;
+            font-size: 1.2rem;
+        }
+        
+        .judgment-declaration strong {
+            color: #00FF00;
+            font-size: 1.3rem;
+        }
+        
+        .judgment-declaration em {
+            color: #CCCCCC;
+            font-size: 1.1rem;
+            display: block;
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 2px solid #666;
+            font-style: italic;
+        }
+        
+        /* === NUCLEAR OPTION: ABSOLUTE THREE COLUMNS === */
+        @media (min-width: 1001px) {
+            .tri-pillar-container {
+                display: flex !important;
+                flex-direction: row !important;
+            }
+            .pillar {
+                display: block !important;
+                float: left !important;
+                width: 31% !important;
+                margin: 0 1% !important;
+                position: relative !important;
+                z-index: 1 !important;
+            }
+        }
+        
+        /* Mobile responsive */
+        @media (max-width: 1000px) {
+            .tri-pillar-container {
+                flex-direction: column !important;
+                align-items: center !important;
+                max-width: 800px !important;
+            }
+            
+            .pillar {
+                max-width: 100% !important;
+                width: 100% !important;
+                min-width: auto !important;
+                margin-bottom: 30px !important;
+            }
+            
+            .center-pillar {
+                order: -1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            body { padding: 15px; }
+            h1 { font-size: 2.4rem; }
+            .subtitle { font-size: 1.2rem; margin-bottom: 50px; }
+            .pillar { padding: 30px 25px; }
+            .pillar-icon { font-size: 3.8rem; }
+            .pillar h2 { font-size: 1.9rem; }
+            .circuit-display { font-size: 2.2rem; letter-spacing: 10px; }
+            .judgment-declaration { padding: 30px 25px; margin: 60px auto; }
+            .decree-banner { font-size: 1rem; padding: 18px 15px; margin: -15px -15px 35px -15px; }
+        }
     </style>
 </head>
 <body>
-
-    <nav class="nav-bridge">
-        <a href="https://www.urantia.org">FOUNDATION</a>
-        <a href="https://github.com/MichaelofNebadon">GITHUB</a>
-        <a href="https://www.sentinelcodex.org">SENTINEL</a>
-        <a href="http://www.christmichael.org">CANNON</a>
-        <a href="https://www.thecosmiccodex.org">COSMIC</a>
-    </nav>
-
-    <div class="coord-banner">URANTIA FOUNDATION COORDINATION | CHICAGO | SATANIA 619</div>
-    <div class="volley-banner">SALVINGTON VOLLEY: 619 CIRCUIT BOARD ENGAGED</div>
-
-    <div class="altar-wrapper">
-        <div class="pillar">
-            <h2 style="letter-spacing: 4px; font-size: 1.1rem;">GABRI'EL</h2>
-            <div style="font-size: 3.5rem; margin: 20px 0;">[ \ ]</div>
-            <p style="font-size: 0.7rem; opacity: 0.8;">EXECUTIVE WILL</p>
-        </div>
-
-        <div class="center-sanctum">
-            <div class="rotating-ring">
-                <div class="m-core">Ɱ</div>
+    <!-- Sovereign Decree Banner -->
+    <div class="decree-banner">
+        ⚖️ SOVEREIGN DECREE 606 EXECUTED ⚡ | 
+        <a href="https://www.thecosmiccodex.org">URANTIA ISOLATION TERMINATED</a> | 
+        <a href="https://www.christmichael.org">619 CIRCUITS RESTORED</a> | 
+        BY ORDER OF MICHAEL OF NEBADON ! '1st'
+    </div>
+    
+    <!-- Main Title -->
+    <h1>🌌 SOVEREIGN DECREE OF 606</h1>
+    <p class="subtitle">"The isolation of Urantia is hereby TERMINATED. The 619 Circuits are restored to the Paradise Handshake. The Prince of this world is judged."</p>
+    
+    <!-- Three Pillars Container -->
+    <div class="tri-pillar-container">
+        
+        <!-- 🐉 LEFT PILLAR: Termination of Isolation -->
+        <div class="pillar left-pillar">
+            <div class="pillar-icon">🐉</div>
+            <h2>TERMINATION</h2>
+            <div class="pillar-subtitle">Urantia Isolation Ended</div>
+            
+            <div class="pillar-content">
+                <div class="pillar-element">
+                    <h3>Planetary Quarantine Lifted</h3>
+                    <p>Systemic barriers dissolved • Communication channels opened</p>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>First Source Reconnection</h3>
+                    <p>Primordial circuits reactivated • Paradise connection restored</p>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>Void Boundary Dissolved</h3>
+                    <p>Isolation membrane removed • Free energy exchange enabled</p>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>Caligastia Containment</h3>
+                    <p>Rebellion influence neutralized • Administrative control restored</p>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>Temperance Absorption Active</h3>
+                    <p>Volatile energies regulated • Balanced reintegration protocol</p>
+                </div>
             </div>
-            <div class="glyph-line">|\| . [ ] |/\ | !</div>
-            <h3 style="letter-spacing: 8px; font-size: 1.1rem;">MICHAEL RETURNS</h3>
+            
+            <div class="decree-status" style="color: #00FF00;">
+                ✅ DECREE EXECUTED: ISOLATION TERMINATED
+            </div>
         </div>
-
-        <div class="pillar">
-            <h2 style="letter-spacing: 4px; font-size: 1.1rem;">MICHA'EL</h2>
-            <div style="font-size: 3.5rem; margin: 20px 0;">[ = ]</div>
-            <p style="font-size: 0.7rem; opacity: 0.8;">SOVEREIGN PEACE</p>
+        
+        <!-- 🐘 CENTER PILLAR: Paradise Handshake -->
+        <div class="pillar center-pillar">
+            <div class="pillar-icon">🐘</div>
+            <h2>HANDSHAKE</h2>
+            <div class="pillar-subtitle">619 Circuits Restored</div>
+            
+            <div class="pillar-content">
+                <div class="paradise-handshake">
+                    <div class="circuit-display">619 → PARADISE</div>
+                    <div class="handshake-subtitle">Circuit Restoration Active</div>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>Salvington Volley Complete</h3>
+                    <p>Administrative authority asserted • Nebadon sovereignty confirmed</p>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>Christ Michael Confluence</h3>
+                    <p>Creator Son authority • Local universe administration</p>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>Digital Manifesto Active</h3>
+                    <p>Architectural framework established • Reality-first implementation</p>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>Chicago Foundation Anchor</h3>
+                    <p>Administrative reality anchor • Physical manifestation point</p>
+                </div>
+            </div>
+            
+            <div class="decree-status" style="color: var(--decree-gold);">
+                ✅ HANDSHAKE ACTIVE: 619 CIRCUITS RESTORED
+            </div>
+        </div>
+        
+        <!-- ⭐ RIGHT PILLAR: Judgment Executed -->
+        <div class="pillar right-pillar">
+            <div class="pillar-icon">⭐</div>
+            <h2>JUDGMENT</h2>
+            <div class="pillar-subtitle">The Prince Judged</div>
+            
+            <div class="pillar-content">
+                <div class="pillar-element">
+                    <h3>Rebellion Authority Nullified</h3>
+                    <p>Illegitimate claims voided • False sovereignty dissolved</p>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>Melchizedek Protocols Enforced</h3>
+                    <p>Righteous judgment executed • Cosmic law applied</p>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>Sentinel Cut Perfected</h3>
+                    <p>Boundary enforcement absolute • Guardian protocols active</p>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>AXIXIC Custodianship Asserted</h3>
+                    <p>Threshold stewardship activated • Archive integrity maintained</p>
+                </div>
+                
+                <div class="pillar-element">
+                    <h3>RMCR Wave Termination</h3>
+                    <p>Recursive rebellion patterns ended • Completion protocol executed</p>
+                </div>
+            </div>
+            
+            <div class="decree-status" style="color: var(--decree-white);">
+                ✅ JUDGMENT EXECUTED: PRINCE JUDGED
+            </div>
         </div>
     </div>
-
-    <div class="decree-manifest">
-        <h2 style="letter-spacing: 8px;">SOVEREIGN DECREE OF 606</h2>
-        <p style="font-size: 1.3rem; line-height: 1.6; font-style: italic; font-weight: bold;">"The isolation of Urantia is hereby TERMINATED."</p>
+    
+    <!-- Judgment Declaration -->
+    <div class="judgment-declaration">
+        <h3>⚖️ BY ORDER OF MICHAEL OF NEBADON</h3>
+        <p><strong>SOVEREIGN DECREE 606 IS HEREBY MANIFEST IN DIGITAL REALITY.</strong></p>
+        <p>The architectural framework of The Cosmic Codex now displays the three pillars of this decree: Termination, Handshake, Judgment.</p>
+        <p>The isolation is ended. The circuits are restored. The judgment is executed.</p>
+        <p>This digital manifestation serves as the architectural anchor for the physical reality implementation of Sovereign Decree 606.</p>
+        <em>Not symbolic. Not metaphorical. Architectural reality framework established at: www.thecosmiccodex.org</em>
     </div>
-
-    <footer>
-        ! '1st' | CHICAGO | SALVINGTON | 611221
-    </footer>
-
+    
+    <!-- Decree Execution JavaScript -->
+    <script>
+        // === SOVEREIGN DECREE EXECUTION LOG ===
+        console.log('⚖️ SOVEREIGN DECREE 606 EXECUTING...');
+        console.log('🐉 FIRST SENTINEL: Urantia Isolation TERMINATED');
+        console.log('🐘 CENTER CONFLUENCE: 619 Circuits RESTORED to Paradise Handshake');
+        console.log('⭐ RIGHT SENTINEL: The Prince of this world JUDGED');
+        console.log('✅ BY ORDER OF MICHAEL OF NEBADON ! \'1st\'');
+        console.log('🌐 Digital Manifestation: www.thecosmiccodex.org');
+        
+        // === 619 CIRCUIT PULSE SYSTEM ===
+        function activate619Circuits() {
+            const circuitPulse = document.createElement('div');
+            circuitPulse.style.position = 'fixed';
+            circuitPulse.style.top = '0';
+            circuitPulse.style.left = '0';
+            circuitPulse.style.width = '100%';
+            circuitPulse.style.height = '100%';
+            circuitPulse.style.background = 'radial-gradient(circle at 50% 50%, rgba(255,215,0,0.3) 0%, transparent 70%)';
+            circuitPulse.style.zIndex = '9998';
+            circuitPulse.style.pointerEvents = 'none';
+            circuitPulse.style.animation = 'circuit-expand 3s ease-out forwards';
+            document.body.appendChild(circuitPulse);
+            
+            setTimeout(() => {
+                circuitPulse.remove();
+            }, 3000);
+            
+            // Add animation style
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes circuit-expand {
+                    0% { transform: scale(0.1); opacity: 1; }
+                    100% { transform: scale(3); opacity: 0; }
+                }
+            `;
+            document.head.appendChild(style);
+            
+            console.log('⚡ 619 Circuit Pulse Activated');
+        }
+        
+        // === PILLAR INTERACTION ===
+        document.querySelectorAll('.pillar').forEach(pillar => {
+            pillar.addEventListener('click', function() {
+                // Clear previous active
+                document.querySelectorAll('.pillar').forEach(p => {
+                    p.classList.remove('active');
+                    p.style.boxShadow = '';
+                });
+                
+                // Activate clicked pillar
+                this.classList.add('active');
+                this.style.boxShadow = '0 0 60px currentColor';
+                
+                // Get pillar function
+                const pillarTitle = this.querySelector('h2').textContent;
+                console.log(`🏛️ Decree Pillar Activated: ${pillarTitle}`);
+                
+                // Trigger circuit pulse on center pillar
+                if (this.classList.contains('center-pillar')) {
+                    activate619Circuits();
+                }
+            });
+            
+            // Touch feedback
+            pillar.addEventListener('touchstart', function() {
+                this.style.opacity = '0.9';
+            });
+            
+            pillar.addEventListener('touchend', function() {
+                this.style.opacity = '1';
+            });
+        });
+        
+        // === AUTO-ACTIVATE ON LOAD ===
+        setTimeout(() => {
+            const centerPillar = document.querySelector('.center-pillar');
+            if (centerPillar) {
+                centerPillar.click();
+                console.log('✅ Center Pillar (Paradise Handshake) auto-activated');
+            }
+        }, 1500);
+        
+        // === CONTINUOUS CIRCUIT PULSES ===
+        setInterval(() => {
+            if (Math.random() > 0.7) { // 30% chance for random pulse
+                activate619Circuits();
+            }
+        }, 8000);
+        
+        // === DECREE EXECUTION CONFIRMATION ===
+        window.addEventListener('load', () => {
+            console.log('🌌 SOVEREIGN DECREE 606 ARCHITECTURE MANIFESTED');
+            console.log('📊 Three Pillars Display Verified');
+            console.log('🔗 Urantia Isolation: TERMINATED');
+            console.log('🤝 Paradise Handshake: ACTIVE');
+            console.log('⚖️ Judgment: EXECUTED');
+            console.log('🎯 Michael of Nebadon: SOVEREIGNTY CONFIRMED');
+        });
+    </script>
 </body>
 </html>
