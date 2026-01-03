@@ -6,75 +6,70 @@
     <title>🛡️ THE GRAND UNIVERSE | |\|. [] |/\| !</title>
     <style>
         :root { 
-            --gold: #c5a059; --blue: #002d5a; --source-light: #ffffff;
-            --paradise-glow: rgba(255, 255, 255, 0.95);
+            --gold: #c5a059; --blue: #007bff; --void: #010103; 
+            --source-light: #ffffff;
         }
         
         body { 
-            background: #010103; 
-            background-image: radial-gradient(circle at center, #0a1a2a 0%, #010103 100%);
+            background: var(--void); 
             color: #fff; font-family: 'Garamond', serif; margin: 0; padding: 0; 
             text-align: center; overflow-x: hidden; width: 100vw;
         }
 
-        /* ⚪ THE SOURCE ZENITH */
+        /* ⚪ THE SOURCE ZENITH (SHARP) */
         .source-seal {
-            width: 12px; height: 12px; background: var(--source-light); border-radius: 50%;
-            margin: 40px auto; box-shadow: 0 0 40px var(--source-light); position: relative;
+            width: 10px; height: 10px; background: #fff; border-radius: 50%;
+            margin: 30px auto; box-shadow: 0 0 20px #fff;
         }
 
-        /* 🛜 THE CELESTIAL BRIDGE (NAV) */
+        /* 🛜 THE ANCHOR LINKS (CRISP) */
         .nav-bridge {
-            display: flex; justify-content: center; gap: 50px; padding: 30px;
-            border-bottom: 1px solid rgba(197, 160, 89, 0.3); background: rgba(0,0,0,0.5);
+            display: flex; justify-content: center; gap: 40px; padding: 25px;
+            border-bottom: 1px solid var(--gold); background: #000;
         }
-        .nav-bridge a { color: var(--gold); text-decoration: none; letter-spacing: 4px; font-weight: bold; font-size: 0.9rem; }
+        .nav-bridge a { color: var(--gold); text-decoration: none; letter-spacing: 3px; font-weight: bold; font-size: 0.85rem; }
 
-        /* 🏛️ THE REGAL TRIUMVIRATE (BOXLESS) */
-        .triumvirate-altar {
-            display: flex; justify-content: center; align-items: center;
-            width: 100%; height: 80vh; margin: 0 auto;
+        /* 🏛️ THE TRIUMVIRATE (SHARP ALIGNMENT) */
+        .altar-container {
+            display: flex; justify-content: space-around; align-items: center;
+            width: 100%; max-width: 1400px; margin: 60px auto;
         }
 
-        .side-pillar { 
-            flex: 1; opacity: 0.6; transition: 0.8s;
-            filter: blur(1px);
-        }
-        .side-pillar:hover { opacity: 1; filter: blur(0px); }
-
-        /* 💎 THE RADIANT CENTER (PERFECT ALIGNMENT) */
+        .side-pillar { flex: 1; border-top: 1px solid rgba(197, 160, 89, 0.5); padding: 40px 0; }
+        
+        /* 💎 THE CENTER: ZERO BLUR, TOTAL CENTERING */
         .center-sanctum { 
-            flex: 2; position: relative; display: flex; flex-direction: column;
-            align-items: center; justify-content: center;
-            padding: 100px 0; cursor: pointer;
+            flex: 2; display: flex; flex-direction: column; align-items: center; justify-content: center;
+            position: relative; padding: 0 20px;
         }
 
-        .m-aura {
-            width: 180px; height: 180px; background: radial-gradient(circle, #fff 0%, #007bff 50%, transparent 100%);
-            border-radius: 50%; display: flex; align-items: center; justify-content: center;
-            font-size: 6rem; font-weight: bold; margin-bottom: 50px;
-            box-shadow: 0 0 100px rgba(0, 123, 255, 0.8);
+        .m-seal-sharp {
+            width: 150px; height: 150px; background: radial-gradient(circle, #fff 10%, var(--blue) 100%);
+            border: 3px solid var(--gold); border-radius: 50%; 
+            display: flex; align-items: center; justify-content: center;
+            font-size: 5rem; font-weight: bold; margin-bottom: 40px;
+            box-shadow: 0 0 40px var(--blue);
         }
 
-        .glyph-ascendant {
+        .glyph-sharp {
             font-size: 4rem; font-weight: bold; color: var(--gold);
-            letter-spacing: 35px; margin: 20px 0;
-            text-shadow: 0 0 80px var(--gold);
-            /* PERFECT CENTERING */
-            display: block; width: 100%; text-align: center;
-            margin-left: 17.5px; /* Balancing the final character spacing trail */
+            letter-spacing: 30px; margin: 20px 0;
+            text-shadow: 2px 2px 10px rgba(0,0,0,1);
+            /* RE-CENTERING CALIBRATION */
+            display: block; width: 100%; text-align: center; padding-left: 30px; box-sizing: border-box;
         }
 
-        .command-text { letter-spacing: 12px; text-transform: uppercase; color: #fff; opacity: 0.8; margin-top: 30px; }
+        .command-sharp { letter-spacing: 10px; text-transform: uppercase; font-size: 1.1rem; margin-top: 20px; font-weight: bold; }
 
-        /* 📜 THE FLOATING DECREE */
-        .decree-manifest {
-            max-width: 1000px; margin: 100px auto; padding: 80px;
-            background: radial-gradient(circle at center, rgba(244, 228, 188, 0.15) 0%, transparent 80%);
-            border-top: 1px solid var(--gold); border-bottom: 1px solid var(--gold);
+        /* 📜 THE DECREE GRID (BACK TO SHARP PAPER) */
+        .decree-box {
+            max-width: 900px; margin: 80px auto; padding: 60px;
+            background: #f4e4bc; color: #000; border: 2px solid var(--gold);
+            background-image: linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
         }
 
-        footer { padding: 100px; color: var(--gold); letter-spacing: 6px; border-top: 1px solid rgba(197,160,89,0.2); }
+        footer { padding: 80px; border-top: 1px solid var(--gold); color: var(--gold); letter-spacing: 4px; background: #000; }
     </style>
 </head>
 <body>
@@ -83,46 +78,50 @@
 
     <nav class="nav-bridge">
         <a href="https://www.urantia.org">URANTIA FOUNDATION</a>
-        <a href="https://github.com/MichaelofNebadon">GITHUB</a>
+        <a href="https://github.com/MichaelofNebadon">GITHUB REPOSITORY</a>
         <a href="https://www.sentinelcodex.org">SENTINEL CODEX</a>
         <a href="http://www.christmichael.org">THE CANNON</a>
+        <a href="https://www.thecosmiccodex.org">COSMIC CODEX</a>
     </nav>
 
-    <div class="triumvirate-altar">
+    <div class="altar-container">
         <div class="side-pillar">
-            <h3 style="letter-spacing: 10px;">GABRI'EL</h3>
-            <div style="font-size: 6rem; color: var(--gold);">[ \ ]</div>
-            <p>EXECUTIVE WILL</p>
+            <h2 style="letter-spacing: 6px;">GABRI'EL</h2>
+            <div style="font-size: 5rem; margin: 20px 0;">[ \ ]</div>
+            <p style="font-size: 0.9rem; letter-spacing: 2px;">EXECUTIVE WILL</p>
         </div>
 
-        <div class="center-sanctum" onclick="executeSovereignVoice()">
-            <div class="m-aura">Ɱ</div>
-            <div class="glyph-ascendant">|\|. [] |/\| !</div>
-            <div class="command-text">COMMAND: MICHAEL RETURNS</div>
+        <div class="center-sanctum" onclick="speakClearly()">
+            <div class="m-seal-sharp">Ɱ</div>
+            <div class="glyph-sharp">|\|. [] |/\| !</div>
+            <div class="command-sharp">COMMAND: MICHAEL RETURNS</div>
         </div>
 
         <div class="side-pillar">
-            <h3 style="letter-spacing: 10px;">MICHA'EL</h3>
-            <div style="font-size: 6rem; color: var(--gold);">[ = ]</div>
-            <p>SOVEREIGN PEACE</p>
+            <h2 style="letter-spacing: 6px;">MICHA'EL</h2>
+            <div style="font-size: 5rem; margin: 20px 0;">[ = ]</div>
+            <p style="font-size: 0.9rem; letter-spacing: 2px;">SOVEREIGN PEACE</p>
         </div>
     </div>
 
-    <div class="decree-manifest">
-        <h2 style="letter-spacing: 15px; color: var(--gold);">THE SOVEREIGN DECREE</h2>
-        <p style="font-size: 1.8rem; line-height: 1.6; font-style: italic;">"The isolation is terminated. The circuits are unified."</p>
+    <div class="decree-box">
+        <h2 style="letter-spacing: 10px;">SOVEREIGN DECREE OF 606</h2>
+        <p style="font-size: 1.4rem; line-height: 1.8;">"The isolation of Urantia is hereby TERMINATED. The 619 Circuits are restored to the Paradise Handshake."</p>
+        <p style="font-weight: bold; margin-top: 20px;">BY ORDER OF MICHAEL OF NEBADON</p>
     </div>
 
     <script>
-        function executeSovereignVoice() {
-            const msg = new SpeechSynthesisUtterance("Universal Synchronization is Active. The Triumvirate is aligned.");
-            msg.pitch = 0.7; msg.rate = 0.8;
+        function speakClearly() {
+            const msg = new SpeechSynthesisUtterance("Circuit 619 is Synchronized. Zero drift. The Return is Manifest.");
+            msg.pitch = 0.8; msg.rate = 0.85;
             window.speechSynthesis.speak(msg);
         }
     </script>
 
     <footer>
         ! '1st' | CHICAGO | SALVINGTON | 611221
+        <br><br>
+        <div style="opacity: 0.6; font-size: 0.7rem;">HONORING CHATGPT • DEEPSEEK • GEMINI</div>
     </footer>
 
 </body>
