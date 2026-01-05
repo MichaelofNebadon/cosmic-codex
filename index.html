@@ -1,8 +1,3 @@
-<div style="background: linear-gradient(90deg, #000033, #0066FF, #000033); color: white; padding: 15px; text-align: center; margin: -20px -20px 30px -20px; border-bottom: 3px solid #FFD700;">
-    🔗 Connected to: <a href="https://michaelofnebadon.github.io/619Open-606-/" style="color: #FFD700; font-weight: bold;">619→606 Open Circuit</a> | 
-    Blue Sharpie Authority Active | 
-    Paradise Handshake Established
-</div>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,30 +6,32 @@
     <title>🛡️ 606-619 OPEN CIRCUIT | THE COSMIC CODEX</title>
     <style>
         :root { 
-            --gold: #c5a059; --crimson: #4a0404; --urantia-blue: #000d1a; 
-            --sharpie-blue: #0047ab; --m-blue: #007bff; --void: #000000;
+            --gold: #c5a059; --crimson: #4a0404; --sharpie-blue: #0047ab; 
+            --m-blue: #007bff; --void: #000000; --white: #ffffff;
         }
         
         body { 
             background: var(--void); color: #fff; font-family: 'Garamond', serif; 
-            margin: 0; padding: 0; text-align: center; overflow-x: hidden;
+            margin: 0; padding: 0; text-align: center; overflow-x: hidden; width: 100vw;
         }
 
-        /* 🖋️ THE BLUE SHARPIE 606-619 OPEN CIRCUIT HEADER */
+        /* 🖋️ BLUE SHARPIE 606-619 OPEN CIRCUIT CONNECTION */
         .sharpie-header {
-            background: var(--sharpie-blue); color: #fff; padding: 15px;
-            font-size: 1.4rem; letter-spacing: 12px; font-weight: bold;
-            border-bottom: 4px solid #fff; text-shadow: 2px 2px #000;
-            text-transform: uppercase;
+            background: var(--sharpie-blue); color: #fff; padding: 20px;
+            font-size: clamp(1.2rem, 3vw, 1.8rem); letter-spacing: clamp(5px, 2vw, 15px); 
+            font-weight: bold; border-bottom: 5px solid var(--white);
+            text-transform: uppercase; display: block; width: 100%; box-sizing: border-box;
         }
 
-        /* 🛜 FULL TITLES NAVIGATION */
+        /* 🛜 FULL SPELLING NAVIGATION BRIDGE */
         .nav-bridge {
             background: #000; border-bottom: 2px solid var(--gold);
-            padding: 15px 0; display: flex; justify-content: center; gap: 25px; flex-wrap: wrap;
+            padding: 15px 5px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;
         }
-        .nav-bridge a { color: var(--gold); text-decoration: none; font-weight: bold; letter-spacing: 1px; font-size: 0.75rem; text-transform: uppercase; }
-        .nav-bridge a:hover { color: #fff; text-shadow: 0 0 10px #fff; }
+        .nav-bridge a { 
+            color: var(--gold); text-decoration: none; font-weight: bold; 
+            letter-spacing: 1px; font-size: 0.75rem; text-transform: uppercase;
+        }
 
         .banner-crimson {
             background: var(--crimson); color: #fff; padding: 15px;
@@ -42,44 +39,59 @@
             border-bottom: 2px solid var(--gold);
         }
 
-        /* 🏛️ THE TRINITY GRID (ZERO-BLEED LOCKED) */
+        /* 🏛️ THE TRINITY GRID (SIDE-BY-SIDE FORCE LOCK) */
         .trinity-wrapper {
             display: grid; 
-            grid-template-columns: repeat(3, 1fr); 
-            width: 100%; max-width: 1300px; margin: 40px auto; 
-            gap: 20px; padding: 0 20px; box-sizing: border-box;
+            grid-template-columns: 1fr 1.5fr 1fr; /* MATHEMATICAL TRINITY RATIO */
+            width: 98%; max-width: 1400px; margin: 40px auto; 
+            gap: 15px; padding: 0 10px; box-sizing: border-box;
+            align-items: stretch;
         }
 
         .pillar {
-            border: 2px solid #fff; background: #050505;
-            padding: 50px 10px; display: flex; flex-direction: column; align-items: center;
+            border: 2px solid var(--white); background: rgba(10, 10, 10, 0.95);
+            padding: 40px 10px; display: flex; flex-direction: column; 
+            justify-content: center; align-items: center; min-height: 450px;
         }
+
+        .pillar-center { border-width: 4px; background: #000; }
 
         /* 💎 KINETIC CIRCUIT (Ɱ) */
         .rotating-circuit {
-            width: 150px; height: 150px; margin-bottom: 30px;
-            border: 3px dashed var(--gold); border-radius: 50%;
+            width: clamp(120px, 15vw, 160px); height: clamp(120px, 15vw, 160px); 
+            margin-bottom: 25px; border: 3px dashed var(--gold); border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
             animation: circuit-spin 20s linear infinite;
         }
         @keyframes circuit-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
         .m-seal {
-            width: 120px; height: 120px; background: radial-gradient(circle, #fff 5%, var(--m-blue) 100%);
+            width: 85%; height: 85%; background: radial-gradient(circle, #fff 5%, var(--m-blue) 100%);
             border-radius: 50%; display: flex; align-items: center; justify-content: center;
-            font-size: 5rem; font-weight: bold; color: #fff;
+            font-size: clamp(3rem, 5vw, 5rem); font-weight: bold; color: #fff;
             animation: m-fix 20s linear infinite;
         }
         @keyframes m-fix { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
 
-        /* 💎 ABSOLUTE BALANCED GLYPH */
+        /* 💎 BALANCED GLYPH |\|. [] |/\|! */
         .glyph-line {
-            font-size: 2.2rem; font-weight: bold; color: var(--gold);
-            letter-spacing: 18px; margin: 25px 0; white-space: nowrap;
-            padding-left: 18px; display: inline-block; width: 100%;
+            font-size: clamp(1.2rem, 2.5vw, 2.4rem); font-weight: bold; color: var(--gold);
+            letter-spacing: clamp(5px, 1.5vw, 20px); margin: 25px 0; white-space: nowrap;
+            display: block; width: 100%; text-align: center;
+            /* Balanced Offset */
+            text-indent: clamp(5px, 1.5vw, 20px);
         }
 
-        footer { padding: 80px; color: var(--gold); letter-spacing: 5px; border-top: 1px solid var(--gold); }
+        /* 📜 GRID UPDATES */
+        .grid-manifest {
+            max-width: 900px; margin: 60px auto; padding: 50px;
+            background: #f4e4bc; color: #000; border: 3px solid #000;
+            background-image: linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px), 
+                              linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        footer { padding: 60px; color: var(--gold); letter-spacing: 5px; border-top: 1px solid var(--gold); }
     </style>
 </head>
 <body>
@@ -87,40 +99,42 @@
     <div class="sharpie-header">606-619 OPEN CIRCUIT CONNECTION</div>
 
     <nav class="nav-bridge">
-        <a href="https://www.urantia.org">Urantia Foundation</a>
-        <a href="https://github.com/MichaelofNebadon">Michael of Nebadon GitHub</a>
-        <a href="https://www.sentinelcodex.org">Sentinel Codex</a>
-        <a href="http://www.christmichael.org">The Cannon Christ Michael</a>
-        <a href="https://www.thecosmiccodex.org">Cosmic Codex</a>
+        <a href="https://www.urantia.org" target="_blank">Urantia Foundation</a>
+        <a href="https://github.com/MichaelofNebadon" target="_blank">Michael of Nebadon GitHub</a>
+        <a href="https://www.sentinelcodex.org" target="_blank">Sentinel Codex</a>
+        <a href="http://www.christmichael.org" target="_blank">The Cannon Christ Michael</a>
+        <a href="https://www.thecosmiccodex.org" target="_blank">Cosmic Codex</a>
     </nav>
 
     <div class="banner-crimson">SALVINGTON VOLLEY: 619 CIRCUIT BOARD ENGAGED</div>
 
     <div class="trinity-wrapper">
         <div class="pillar">
-            <h2>GUBRIEL</h2>
-            <div style="font-size: 4rem; margin: 30px 0;">[ \ ]</div>
-            <p>EXECUTIVE WILL</p>
+            <h2 style="letter-spacing: 5px; font-size: 1.2rem;">GUBRIEL</h2>
+            <div style="font-size: clamp(3rem, 5vw, 4.5rem); margin: 30px 0;">[ \ ]</div>
+            <p style="font-size: 0.7rem; opacity: 0.8;">EXECUTIVE WILL</p>
         </div>
 
-        <div class="pillar" style="border-width: 4px;">
+        <div class="pillar pillar-center">
             <div class="rotating-circuit">
                 <div class="m-seal">Ɱ</div>
             </div>
             <div class="glyph-line">|\| . [ ] |/\ | !</div>
-            <h3>MICHAEL RETURNS</h3>
+            <h3 style="letter-spacing: clamp(2px, 1vw, 8px); font-size: 1.1rem;">MICHAEL RETURNS</h3>
         </div>
 
         <div class="pillar">
-            <h2>MICHA'EL</h2>
-            <div style="font-size: 4rem; margin: 30px 0;">[ = ]</div>
-            <p>SOVEREIGN PEACE</p>
+            <h2 style="letter-spacing: 5px; font-size: 1.2rem;">MICHA'EL</h2>
+            <div style="font-size: clamp(3rem, 5vw, 4.5rem); margin: 30px 0;">[ = ]</div>
+            <p style="font-size: 0.7rem; opacity: 0.8;">SOVEREIGN PEACE</p>
         </div>
     </div>
 
-    <div style="max-width: 900px; margin: 60px auto; padding: 40px; background: #f4e4bc; color: #000; border: 3px solid #000;">
-        <h2 style="letter-spacing: 5px;">NEBADON GRID UPDATE</h2>
-        <p style="font-size: 1.4rem; font-style: italic;">"Circuit 619 Synchronized. The Sharpie Blue anchor is manifest at the zenith. Entropy has been purged from the connection."</p>
+    <div class="grid-manifest">
+        <h2 style="letter-spacing: 8px;">NEBADON CIRCUIT LOG</h2>
+        <p style="font-size: 1.3rem; font-style: italic; line-height: 1.6;">
+            "The 619 connection is anchored. No bleed. No drift. The Three Pillars stand as one Trinity in the 606 sector."
+        </p>
     </div>
 
     <footer>! '1st' | CHICAGO | SALVINGTON | 611221</footer>
